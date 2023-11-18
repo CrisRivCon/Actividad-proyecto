@@ -7,12 +7,23 @@
 h1,
 h2,
 h3,
-button,
-h4 {
+h4,
+a {
   font-family: 'Bebas Neue', sans-serif;
 }
+a > span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+}
+h1,h2, h3 {
+  letter-spacing: 0.05em;
+}
 
-a,
+h2, h3 {
+  font-size: 32px;
+}
+
+nav a,
 p,
 label {
   font-family: 'Oswald', sans-serif;
@@ -40,46 +51,36 @@ a {
   background-size: cover;
 }
 
-.boton-primario {
-  background-color: #93C01F;
+.boton-primario, .boton-secundario {
   border-radius: 20px;
+  display: inline-block;
   height: 50px;
   padding-top: 12px;
   text-align: center;
   width: 150px;
-  transition-duration: 3s;
-  transition-property: box-shadow;
   color: #FFFFFF;
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.boton-primario:hover {
-  box-shadow: 2px 2px 3px #555962;
-
-}
-
-.boton-primario:active {
-  box-shadow: -1px -3px 1px #555962 inset;
+.boton-primario {
+  background-color: #93C01F;
 }
 
 .boton-secundario {
   background-color: #cb6370;
-  border-radius: 20px;
-  height: 50px;
-  padding-top: 12px;
-  text-align: center;
-  width: 150px;
-  transition-duration: 3s;
-  transition-property: box-shadow;
-  color: #FFFFFF;
-}
-
-.boton-secundario:hover {
-  box-shadow: 2px 2px 3px #555962;
 
 }
 
-.boton-secundario:active {
-  box-shadow: -1px -3px 1px #555962 inset;
+.boton-primario:hover, .boton-secundario:hover {
+
+}
+
+.boton-primario:active, .boton-secundario:active {
+  box-shadow: 
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 /*______________________________Header_____________________________*/
@@ -89,10 +90,10 @@ nav {
   border-radius: 10PX;
   box-shadow: 2px 3px 3px #555962;
   height: 72px;
-  font-family: 'Bebas Neue', sans-serif;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 2%;
+  min-width: 975px;
   position: fixed;
   width: 90%;
   z-index: 1;
@@ -204,18 +205,21 @@ nav a {
 
 /*______________________________Sección 2 Home_____________________________*/
 
-.seccion-2 {
+.seccion-2, .seccion-3 {
   height: 856px;
   overflow: hidden;
   width: 100%;
 }
 
-.fondo-seccion-2 {
-  background-image: url('../img/Fondo\ franja\ 2.png');
+.fondo-seccion-2, .fondo-seccion-3 {
   background-size: cover;
   height: 856px;
   position: absolute;
   width: 100%;
+}
+
+.fondo-seccion-2 {
+  background-image: url('../img/Fondo\ franja\ 2.png');
 }
 
 .texto-secc-2 {
@@ -249,6 +253,8 @@ nav a {
 
 .seccion-2 .boton {
   margin-top: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .imagenes {
@@ -263,7 +269,7 @@ nav a {
 }
 
 .imagenes img:first-child {
-  left: 47%;
+  left: 40%;
   height: 312px;
   width: 416px;
   position: absolute;
@@ -272,7 +278,7 @@ nav a {
 }
 
 .imagenes img:last-child {
-  left: 57%;
+  left: 50%;
   height: 424px;
   width: 616px;
   position: absolute;
@@ -280,16 +286,57 @@ nav a {
 
 /*______________________________Sección 3 Home_____________________________*/
 
-.seccion-3 {
-  height: 856px;
-  overflow: hidden;
-  width: 100%;
-}
-
 .fondo-seccion-3 {
   background-image: url('../img//fondocolabora.JPG');
-  background-size: cover;
-  height: 856px;
-  position: absolute;
-  width: 100%;
+}
+
+.texto-secc-3 {
+  position: relative;
+  top: 10%;
+}
+
+.texto-secc-3 h2 {
+  color: #FFFFFF;
+  font-size: 48px;
+  text-align: center;
+}
+
+.cards {
+  position: relative;
+  top: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #93C01F;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px #555962;
+  float: left;
+  height: 388px;
+  min-width: 289px;
+  position: relative;
+  text-align: center;
+  width: 289px;
+}
+
+.card h3 {
+  color: #cb6370;
+  margin-top: 20px;
+}
+
+.card img {
+  height: 74px;
+  width: 74px;
+}
+
+.card .descripcion {
+  font-weight: lighter;
+}
+
+.card-email  {
+  color: #93C01F;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
