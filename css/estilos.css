@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+button,
+h4 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+a,
+p,
+label {
+  font-family: 'Oswald', sans-serif;
+}
+
+.enlace-3 {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.email {
+  background-image: url('../img/sobre.png');
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url('../img/facebook.png');
+  background-size: cover;
+}
+.instagram {
+  background-image: url('../img/instagram.png');
+  background-size: cover;
+}
+
+.boton-primario {
+  background-color: #93C01F;
+  border-radius: 20px;
+  height: 50px;
+  padding-top: 12px;
+  text-align: center;
+  width: 150px;
+  transition-duration: 3s;
+  transition-property: box-shadow;
+  color: #FFFFFF;
+}
+
+.boton-primario:hover {
+  box-shadow: 2px 2px 3px #555962;
+
+}
+
+.boton-primario:active {
+  box-shadow: -1px -3px 1px #555962 inset;
+}
+
+.boton-secundario {
+  background-color: #cb6370;
+  border-radius: 20px;
+  height: 50px;
+  padding-top: 12px;
+  text-align: center;
+  width: 150px;
+  transition-duration: 3s;
+  transition-property: box-shadow;
+  color: #FFFFFF;
+}
+
+.boton-secundario:hover {
+  box-shadow: 2px 2px 3px #555962;
+
+}
+
+.boton-secundario:active {
+  box-shadow: -1px -3px 1px #555962 inset;
+}
+
+/*______________________________Header_____________________________*/
+nav {
+  background-color: #FFFFFF;
+  border: 1px solid #93C01F;
+  border-radius: 10PX;
+  box-shadow: 2px 3px 3px #555962;
+  height: 72px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  position: fixed;
+  width: 90%;
+  z-index: 1;
+}
+
+nav > div {
+  float: left;
+  height: 100%;
+}
+
+nav>div:first-child {
+  width: 20%;
+}
+
+nav>div:nth-child(2) {
+  width: 61%;
+}
+
+nav>div:last-child {
+  min-width: 170px;
+  padding-top: 11px;
+  text-align: right;
+  width: 19%;
+}
+
+nav .logo {
+  margin-left: 15%;
+  height: 72px;
+}
+
+nav ul {
+  height: 100%;
+  margin: auto;
+  min-width: 477px;
+  width: 73%;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-top: 28px;
+  margin-left: 15%;
+}
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #000000;
+}
+
+.select {
+  text-decoration: underline;
+}
+
+.boton-nav {
+  margin: auto;
+  margin-right: 15%;
+}
+
+
+/*______________________________Sección 1 Home_____________________________*/
+.seccion-1 {
+  height: 960px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.espacio-izq-sec-1 {
+  left: 10%;
+  position: relative;
+}
+.fondo-seccion-1 {
+  background-image: url('../img/_MA_5308.jpg');
+  background-size: cover;
+  height: 960px;
+  position: absolute;
+  width: 100%;
+}
+
+.cubre-fotos {
+  background-color: #000000;
+  height: 960px;
+  position: absolute;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.seccion-1 h1 {
+  color: #FFFFFF;
+  font-size: 3em;
+  top: 40%;
+}
+
+.seccion-1 p {
+  color: #FFFFFF;
+  line-height: 2.5em;
+  top: 46%;
+}
+
+.botones {
+  top: 57%;
+}
+
+.botones div {
+  float: left;
+  margin-right: 3%;
+}
+
+/*______________________________Sección 2 Home_____________________________*/
+
+.seccion-2 {
+  height: 856px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fondo-seccion-2 {
+  background-image: url('../img/Fondo\ franja\ 2.png');
+  background-size: cover;
+  height: 856px;
+  position: absolute;
+  width: 100%;
+}
+
+.texto-secc-2 {
+  border-left: 2px solid #93C01F;
+  padding-left: 5%;
+  position: relative;
+  top: 25%;
+}
+
+.seccion-2 h2 {
+  color: #93C01F;
+  margin-bottom: 15px
+}
+
+.seccion-2 p {
+  font-weight: lighter;
+  line-height: 2em;
+}
+
+.redes-sociales {
+  height: 80px;
+}
+
+.redes-sociales div {
+  float: left;
+  margin: 27px;
+  margin-left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.seccion-2 .boton {
+  margin-top: 15px;
+}
+
+.imagenes {
+  z-index: 0;
+  position: relative;
+  height: inherit;
+}
+.imagenes img {
+  top: -205px;
+  border: 20px solid white;
+  border-radius: 40px;
+}
+
+.imagenes img:first-child {
+  left: 47%;
+  height: 312px;
+  width: 416px;
+  position: absolute;
+  z-index: 2;
+  top: 12%;
+}
+
+.imagenes img:last-child {
+  left: 57%;
+  height: 424px;
+  width: 616px;
+  position: absolute;
+}
+
+/*______________________________Sección 3 Home_____________________________*/
+
+.seccion-3 {
+  height: 856px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fondo-seccion-3 {
+  background-image: url('../img//fondocolabora.JPG');
+  background-size: cover;
+  height: 856px;
+  position: absolute;
+  width: 100%;
+}
