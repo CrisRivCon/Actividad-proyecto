@@ -355,19 +355,20 @@ div.botones {
 
 .texto-footer {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 80% 20%;
   height: 100%;
   justify-items: center;
+  min-width: 742px;
 }
 
-.texto-footer > div {
+.contacto, .enlaces, .ubicacion {
   display: grid;
-  grid-template-rows: 81px repeat(4,50px);
+  grid-template-rows: 81px repeat(4,45px);
   align-items: center;
 }
 
-.contacto {
+.contacto, .ubicacion {
   grid-template-columns: 24% auto;
 }
 
@@ -375,15 +376,41 @@ div.botones {
   grid-template-columns: 100%;
 }
 
-.contacto div {
-  width: 30px;
-  height: 30px;
+.enlaces a{
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+.contacto div, .ubicacion div {
+  width: 25px;
+  height: 25px;
 }
 
 .footer h3 {
   color: #FFFFFF;
   align-self: end;
-grid-column-start: 1;
-grid-column-end: 3;
-justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 24px;
+  justify-self: left;
+}
+
+.footer a {
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+}
+
+.footer-footer {
+  display: grid;
+  grid-template-rows: 10% 89%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+}
+
+.footer-footer hr {
+  width: 90%;
+  height: 2px;
+  justify-self: center;
 }
