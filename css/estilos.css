@@ -281,19 +281,20 @@ div.botones {
 }
 
 .imagenes img:first-child {
-  height: 312px;
-  width: 416px;
-  position: absolute;
-  z-index: 2;
-  top: 47%;
-}
-
-.imagenes img:last-child {
   left: 22%;
   height: 424px;
   width: 616px;
   position: absolute;
   top: 39px;
+}
+
+.imagenes img:last-child {
+  height: 312px;
+  width: 416px;
+  position: absolute;
+  z-index: 2;
+  top: 47%;
+  
 }
 
 /*______________________________Sección 3 Home_____________________________*/
