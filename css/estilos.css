@@ -7,8 +7,7 @@
 h1,
 h2,
 h3,
-h4,
-a {
+h4 {
   font-family: 'Bebas Neue', sans-serif;
 }
 a > span {
@@ -23,7 +22,7 @@ h2, h3 {
   font-size: 32px;
 }
 
-nav a,
+a,
 p,
 label {
   font-family: 'Oswald', sans-serif;
@@ -322,12 +321,14 @@ div.botones {
   border: 1px solid #93C01F;
   border-radius: 30px;
   box-shadow: 3px 3px 3px #555962;
-  float: left;
   height: 388px;
   min-width: 289px;
-  position: relative;
   text-align: center;
   width: 289px;
+  display: grid;
+  grid-template-rows: 15% 15% 40% 10% 20%;
+  justify-items: center;
+  align-items: center;
 }
 
 .card h3 {
@@ -336,15 +337,21 @@ div.botones {
 }
 
 .card img {
+  height: 45px;
+  width: 45px;
+}
+
+.card:first-child img, .card:last-child img {
   height: 74px;
   width: 74px;
 }
 
 .card .descripcion {
   font-weight: lighter;
+  width: 200px;
 }
 
-.card-email  {
+.card-email {
   color: #93C01F;
   margin-top: 20px;
   margin-bottom: 20px;
