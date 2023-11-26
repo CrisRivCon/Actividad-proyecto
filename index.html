@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Cris Rivera" />
-    <meta name="copyright" content="Cris Rivera" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,23 +16,23 @@
     <header>
         <nav>
             <div>
-                <img class="logo" src="img/logo.png" alt="logo de la Asociación, la cara de un gato en negro">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="logo de la Asociación, la cara de un gato en negro"></a>
             </div>
             <div>
                 <ul>
-                    <li class="select"><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li class="select"><a href="index.html">Inicio</a></li>
+                    <li><a href="/src/quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="/src/contacto.html">Contacto</a></li>
+                    <li><a href="/src/blog.html">Blog</a></li>
                 </ul>
             </div>
             <div>
-                <a href="#"><span class="boton-secundario boton-nav">COLABORA</span></a>
+                <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="seccion-1">
+        <div id="seccion-1" class="seccion-1">
             <div class="fondo-seccion-1"></div>
             <div class="cubre-fotos"></div>
             <h1 class="espacio-izq-sec-1">Asociación Chipi Gato Feliz</h1>
@@ -42,11 +40,11 @@
                 Dedicadas al cuidado y rescate de los gatos sin hogar <br> en Chipiona.
             </p>
             <div class="botones espacio-izq-sec-1">
-                <a href="#"><span class="boton-primario">SABER MÁS</span></a>
-                <a href="#"><span class="boton-secundario">COLABORA</span></a>
+                <a href="/src/quienes-somos.html"><span class="boton-primario">SABER MÁS</span></a>
+                <a href="#seccion-3-colabora"><span class="boton-secundario">COLABORA</span></a>
             </div>
         </div>
-        <div class="seccion-2 fondo-seccion-2">
+        <section id="seccion-2-adopta" class="seccion-2 fondo-seccion-2">
             <div class="texto-secc-2 espacio-izq-sec-1">
                 <h2>¿Quieres adoptar?</h2>
                 <p class="titulo-texto">
@@ -68,8 +66,8 @@
                 <img src="img/figma/Tarzán.JPG" alt="gato blanco y negro">
                 <img src="img/figma/IMG_7912.JPG" alt="gato blanco y naranja">
             </div>
-        </div>
-        <div class="seccion-3 fondo-seccion-3"">
+        </section>
+        <section id="seccion-3-colabora" class="seccion-3 fondo-seccion-3">
             <div class="texto-secc-3">
                 <h2>Colabora</h2>
             </div>
@@ -122,9 +120,9 @@
                     <a href="#"><span class="boton-primario">FORMULARIO</span></a>
                 </div>
             </div>     
-        </div>
+        </section>
     </main>
-    <footer class="footer fondo-footer"">
+    <footer class="footer fondo-footer">
         <div class="texto-footer">
             <div class="contacto">
                 <h3>CONTACTO</h3>
@@ -136,9 +134,9 @@
             <div class="enlaces">
                 <h3>ENLACES DE INTERÉS</h3>
                 <a href="">Politicas de privacidad</a>
-                <a href="">Contacto</a>
-                <a href="">Quienes somos</a>
-                <a href="">Blog</a>
+                <a href="/src/contacto.html">Contacto</a>
+                <a href="/src/quienes-somos.html">Quienes somos</a>
+                <a href="/src/blog.html">Blog</a>
             </div>
             <div class="ubicacion">
                 <h3>UBICACIÓN</h3>
