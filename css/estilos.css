@@ -52,17 +52,21 @@ a {
 }
 
 .email-blanco {
-  background-image: url('../img/sobre.png');
+  background-image: url('../img/icon/sobre\(1\).png');
   background-size: cover;
 }
 
 .facebook-blanco {
-  background-image: url('../img/facebook.png');
+  background-image: url('../img/icon/facebook\(1\).png');
   background-size: cover;
 }
 
 .instagram-blanco {
-  background-image: url('../img/instagram.png');
+  background-image: url('../img/icon/instagram\(1\).png');
+  background-size: cover;
+}
+.ubicacion-blanco {
+  background-image: url('../img/icon/ubicacion.png');
   background-size: cover;
 }
 
@@ -168,7 +172,7 @@ nav a {
   position: relative;
 }
 .fondo-seccion-1 {
-  background-image: url('../img/_MA_5308.jpg');
+  background-image: url('../img/figma/disparo-horizontal-dos-gatos-sentados-sobre-fondo-borroso.jpg');
   background-size: cover;
   height: 960px;
   position: absolute;
@@ -356,7 +360,7 @@ div.botones {
 .texto-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 85% 15%;
   height: 100%;
   justify-items: center;
   min-width: 742px;
@@ -366,10 +370,11 @@ div.botones {
   display: grid;
   grid-template-rows: 81px repeat(4,45px);
   align-items: center;
+  width: 60%;
 }
 
 .contacto, .ubicacion {
-  grid-template-columns: 24% auto;
+  grid-template-columns: 20% auto;
 }
 
 .enlaces {
@@ -382,8 +387,8 @@ div.botones {
 
 }
 .contacto div, .ubicacion div {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer h3 {
@@ -410,7 +415,19 @@ div.botones {
 }
 
 .footer-footer hr {
+  color: #FFFFFF;
   width: 90%;
   height: 2px;
   justify-self: center;
+}
+
+.footer-footer a {
+  justify-self: center;
+}
+.ubicacion iframe {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-radius: 4%;
 }
