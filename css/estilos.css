@@ -254,7 +254,7 @@ div.botones {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  width: 184px;
+  width: 160px;
   align-items: center;
 }
 
@@ -301,7 +301,7 @@ div.botones {
 
 .fondo-seccion-3 {
   background-image: url('../img//fondocolabora.JPG');
-  box-shadow: 2px 2px 3px #000000;
+  box-shadow: 3px 3px 3px #555962;
 }
 
 .texto-secc-3 {
@@ -383,11 +383,11 @@ div.botones {
   display: grid;
   grid-template-rows: 81px repeat(4,45px);
   align-items: center;
-  width: 60%;
+  width: 200px;
 }
 
 .contacto, .ubicacion {
-  grid-template-columns: 20% auto;
+  grid-template-columns: 24px auto;
 }
 
 .enlaces {
@@ -415,7 +415,6 @@ div.botones {
 
 .footer a {
   color: #FFFFFF;
-  font-family: 'Oswald', sans-serif;
   font-weight: lighter;
 }
 
@@ -444,3 +443,5 @@ div.botones {
   grid-row-end: 6;
   border-radius: 4%;
 }
+
+/*______________________________Sección 1 Quienes Somos_____________________________*/
