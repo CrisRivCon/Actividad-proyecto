@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body { 
+  min-height: 100vh; 
+}
+
 h1,
 h2,
 h3,
@@ -160,10 +164,18 @@ nav a {
 
 /*______________________________Sección 1 Home_____________________________*/
 .seccion-1 {
-  height: 960px;
   overflow: hidden;
   box-shadow: 2px 2px 3px #000000;
   width: 100%;
+  min-height: 100vh;
+}
+.texto-seccion-1 {
+  top: 40%;
+  left: 5%;
+  position: absolute;
+  display: grid;
+  grid-template-rows: 100px 100px 217px;
+  align-items: center;
 }
 
 .espacio-izq-sec-1 {
@@ -173,14 +185,14 @@ nav a {
 .fondo-seccion-1 {
   background-image: url('../img/figma/disparo-horizontal-dos-gatos-sentados-sobre-fondo-borroso.jpg');
   background-size: cover;
-  height: 960px;
+  min-height: 100vh;
   position: absolute;
   width: 100%;
 }
 
 .cubre-fotos {
   background-color: #000000;
-  height: 960px;
+  min-height: 100vh;
   position: absolute;
   opacity: 0.7;
   width: 100%;
@@ -189,17 +201,11 @@ nav a {
 .seccion-1 h1 {
   color: #FFFFFF;
   font-size: 3em;
-  top: 40%;
 }
 
 .seccion-1 p {
   color: #FFFFFF;
   line-height: 2.5em;
-  top: 46%;
-}
-
-.botones {
-  top: 57%;
 }
 
 div.botones {
@@ -212,7 +218,7 @@ div.botones {
 
 .seccion-2, .seccion-3 {
   background-size: cover;
-  height: 856px;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -220,7 +226,7 @@ div.botones {
 
 .fondo-seccion-2, .fondo-seccion-3 {
   position: relative;
-  height: 856px;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -272,7 +278,6 @@ div.botones {
 .imagenes {
   z-index: 0;
   position: relative;
-  height: inherit;
 }
 .imagenes img {
   border: 20px solid white;
@@ -281,11 +286,10 @@ div.botones {
 }
 
 .imagenes img:first-child {
-  left: 22%;
   height: 424px;
   width: 616px;
   position: absolute;
-  top: 39px;
+  margin-top: -27%;
 }
 
 .imagenes img:last-child {
@@ -293,7 +297,8 @@ div.botones {
   width: 416px;
   position: absolute;
   z-index: 2;
-  top: 47%;
+  margin-top: 7%;
+  left: -15%;
   
 }
 
@@ -306,7 +311,7 @@ div.botones {
 
 .texto-secc-3 {
   position: relative;
-  top: 10%;
+  margin-top: 10%;
 }
 
 .texto-secc-3 h2 {
@@ -317,9 +322,10 @@ div.botones {
 
 .cards {
   position: relative;
-  top: 30%;
+  margin-top: 9%;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .card {
@@ -445,3 +451,19 @@ div.botones {
 }
 
 /*______________________________Sección 1 Quienes Somos_____________________________*/
+.quienes-somos {
+  background-color: #B4D363;
+}
+
+.medio-circulo {
+  width: 50%; 
+     background-color: #FFFFFF;
+     border-radius: 100px 0 0 100px;
+}
+
+.contenedor-fondo {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  min-height: 100vh;
+}
