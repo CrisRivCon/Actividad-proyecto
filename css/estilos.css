@@ -235,6 +235,10 @@ div.botones {
   border-left: 2px solid #93C01F;
   padding-left: 40px;
 }
+.texto-secc-2 a {
+  color: #000000;
+  font-weight: 500;
+}
 
 .seccion-2 h2 {
   color: #93C01F;
@@ -273,6 +277,7 @@ div.botones {
 .imagenes img {
   border: 20px solid white;
   border-radius: 40px;
+  box-shadow: 3px 3px 3px #555962;
 }
 
 .imagenes img:first-child {
