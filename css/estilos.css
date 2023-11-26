@@ -285,14 +285,14 @@ div.botones {
   box-shadow: 3px 3px 3px #555962;
 }
 
-.imagenes img:first-child {
+.seccion-2 .imagenes img:first-child {
   height: 424px;
   width: 616px;
   position: absolute;
   margin-top: -27%;
 }
 
-.imagenes img:last-child {
+.seccion-2 .imagenes img:last-child {
   height: 312px;
   width: 416px;
   position: absolute;
@@ -451,19 +451,59 @@ div.botones {
 }
 
 /*______________________________Sección 1 Quienes Somos_____________________________*/
-.quienes-somos {
-  background-color: #B4D363;
-}
-
-.medio-circulo {
-  width: 50%; 
-     background-color: #FFFFFF;
-     border-radius: 100px 0 0 100px;
-}
-
 .contenedor-fondo {
+  background-image: url('../img/fondo2.png');
+  background-size: cover;
+  min-height: 100vh;
+  transform: rotate(180deg);
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.contenido {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+}
+
+.imagen-quienes-somos {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 492px;
+  height: 584px;
+}
+
+.imagen-quienes-somos img {
+  width: 492px;
+  height: 584px;
+}
+
+.texto-quienes-somos h1, .texto-quienes-somos p {
+  color: #000000;
+}
+
+.texto-quienes-somos {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+/* .contenedor-fondo {
   display: flex;
   justify-content: end;
   align-content: center;
   min-height: 100vh;
 }
+.medio-circulo {
+  width: 46%; 
+     background-color: #FFFFFF;
+     border-radius: 50% 0 0 50%;
+}
+.cuadrado {
+  width: 18%; 
+     background-color: #FFFFFF;
+} */
