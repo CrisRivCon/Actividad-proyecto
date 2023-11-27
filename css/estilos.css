@@ -282,20 +282,23 @@ div.botones {
 .imagenes img {
   border: 20px solid white;
   border-radius: 40px;
+}
+.seccion-2 .imagenes img {
   box-shadow: 3px 3px 3px #555962;
+  position: absolute;
+
+
 }
 
 .seccion-2 .imagenes img:first-child {
   height: 424px;
   width: 616px;
-  position: absolute;
   margin-top: -27%;
 }
 
 .seccion-2 .imagenes img:last-child {
   height: 312px;
   width: 416px;
-  position: absolute;
   z-index: 2;
   margin-top: 7%;
   left: -15%;
@@ -349,8 +352,8 @@ div.botones {
 }
 
 .card img {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
 }
 
 .card:first-child img, .card:last-child img {
@@ -464,7 +467,7 @@ div.botones {
 .contenido {
   display: grid;
   grid-template-rows: 10% 90%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: minmax(47% auto) minmax(53% auto);
   width: 100%;
   height: 100vh;
   position: relative;
@@ -475,13 +478,14 @@ div.botones {
 .imagen-quienes-somos {
   grid-column-start: 1;
   grid-row-start: 2;
+  justify-self: end;
   width: 492px;
-  height: 584px;
+  height: 608px;
 }
 
 .imagen-quienes-somos img {
-  width: 492px;
-  height: 584px;
+  width: 90%;
+  height: 90%;
 }
 
 .texto-quienes-somos h1, .texto-quienes-somos p {
@@ -491,6 +495,22 @@ div.botones {
 .texto-quienes-somos {
     grid-column-start: 2;
     grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 20% 30% 25% 30%;
+    height: 61%;
+    align-items: center;
+    max-width: 576px;
+    justify-self: baseline;
+}
+
+.texto-quienes-somos p {
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+}
+
+.contenido .redes-sociales { 
+  justify-self: center;
+  width: 281px;
 }
 /* .contenedor-fondo {
   display: flex;
