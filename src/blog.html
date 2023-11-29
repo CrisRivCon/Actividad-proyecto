@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Blog de la Asociación Chipi Gato Feliz</title>
+    <style>
+        .destacado img {
+            width: 224px;
+            height: 256px;
+        }
+
+        .articulos img {
+            width: 160px;
+            height: 176px;
+        }
+
+        .blog img {
+            border-radius: 15px;
+        }
+
+        .blog {
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 50% 50%;
+            width: 80%;
+        }
+
+        .blog h2 {
+            font-size: 1.5em;
+        }
+
+        .destacado, .articulos>div {
+            display: flex;
+            border-top: 1px solid #555962;
+            border-bottom: 1px solid #555962;
+        }
+
+        .destacado p, .articulos p, .novedades div > p:last-child {
+            font-weight: lighter;
+
+        }
+        
+        .destacado {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .articulos {
+            display: flex;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+        }
+
+        .blog a {
+            color: #93C01F;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="/index.html"><img class="logo" src="../img/logo.png" alt="logo de la Asociación, la cara de un gato en negro"></a>
+            </div>
+            <div>
+                <ul>
+                    <li class="select"><a href="/index.html">Inicio</a></li>
+                    <li><a href="/src/quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="/src/contacto.html">Contacto</a></li>
+                    <li><a href="/src/blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
+            </div>
+        </nav>
+    </header>
+    <main id="blog" class="blog">
+        <div class="destacado">
+            <img src="/img/IMG_8557.JPG" alt="gato blanco acostado">
+            <div class="texto-destacado">
+                <h2>¿Qúe tengo que hacer para adoptar un gato?</h2>
+                <p><strong>Pasos para adoptar</strong></p>
+                <p>Te explicamos los pasos que tienes que seguir si quieres adoptar
+                    alguno de nuestros gatos.</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+        </div>
+        <div class="novedades">
+            <h4>Nuevos</h4>
+            <div>
+                <p>
+                    ¿Qúe tengo que hacer para adoptar...
+                </p>
+                <p>22 Oct 2023</p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p>31 Oct 2023</p>
+            </div>
+            <div>
+                <p>
+                    ¿Lorem ipsum dolor sit amet
+                </p>
+                <p>31 Oct 2023</p>
+            </div>
+        </div>
+        <div class="articulos">
+            <div>
+                <img src="/img/IMG_8153.JPG" alt="">
+                <div texto-articulo>
+                    <h2>lorem ipsum dolor sit </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+            <div>
+                <img src="/img/IMG_8684.JPG" alt="">
+                <div texto-articulo>
+                    <h2>lorem ipsum dolor sit </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer fondo-footer">
+        <div class="texto-footer">
+            <div class="contacto">
+                <h3>CONTACTO</h3>
+                    <a href="mailto:chipigatofeliz@gmail.com"><div class="email-blanco"></div></a><a href="mailto:chipigatofeliz@gmail.com">chipigatofeliz@gmail.com</a>
+                    <a href="https://www.facebook.com/profile.php?id=100010805748721"><div class="facebook-blanco"></div></a><a href="https://www.facebook.com/profile.php?id=100010805748721">Cecilia Chipi</a>
+                    <a href="https://www.facebook.com/PlataformaGatoFeliz"><div class="facebook-blanco"></div></a><a href="https://www.facebook.com/PlataformaGatoFeliz">Chipi Gato Feliz</a>
+                    <a href="https://instagram.com/chipigatofeliz?igshid=YzAwZjE1ZTI0Zg=="><div class="instagram-blanco"></div></a><a href="https://instagram.com/chipigatofeliz?igshid=YzAwZjE1ZTI0Zg==">Chipi Gato Feliz</a>
+            </div>
+            <div class="enlaces">
+                <h3>ENLACES DE INTERÉS</h3>
+                <a href="">Politicas de privacidad</a>
+                <a href="/src/contacto.html">Contacto</a>
+                <a href="/src/quienes-somos.html">Quienes somos</a>
+                <a href="/src/blog.html">Blog</a>
+            </div>
+            <div class="ubicacion">
+                <h3>UBICACIÓN</h3>
+                    <a href="https://maps.app.goo.gl/jeHxYJJrsPhcJytH8"><div class="ubicacion-blanco"></div></a><a href="https://maps.app.goo.gl/jeHxYJJrsPhcJytH8">Chipiona, Cádiz</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25581.115021605146!2d-6.451361439883361!3d36.731221275046124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0e75a23be20167%3A0x166c05cf50644a01!2s11550%20Chipiona%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701021126863!5m2!1ses!2ses" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-footer">
+                <hr>
+                <a href="">Copyright © 2023 Cris</a>
+            </div>
+        </div>     
+    </footer>
+</body>
+</html>
