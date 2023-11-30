@@ -279,6 +279,7 @@ div.botones {
   z-index: 0;
   position: relative;
 }
+
 .imagenes img {
   border: 20px solid white;
   border-radius: 40px;
@@ -388,14 +389,14 @@ div.botones {
   min-width: 742px;
 }
 
-.contacto, .enlaces, .ubicacion {
+footer .contacto,footer .enlaces, footer .ubicacion {
   display: grid;
   grid-template-rows: 81px repeat(4,45px);
   align-items: center;
   width: 200px;
 }
 
-.contacto, .ubicacion {
+footer .contacto, footer .ubicacion {
   grid-template-columns: 24px auto;
 }
 
@@ -408,7 +409,7 @@ div.botones {
   grid-column-end: 3;
 
 }
-.contacto div, .ubicacion div {
+footer .contacto div, footer .ubicacion div {
   width: 20px;
   height: 20px;
 }
@@ -445,7 +446,7 @@ div.botones {
 .footer-footer a {
   justify-self: center;
 }
-.ubicacion iframe {
+footer .ubicacion iframe {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -455,13 +456,15 @@ div.botones {
 
 /*______________________________Sección 1 Quienes Somos_____________________________*/
 .contenedor-fondo {
-  background-image: url('../img/fondo2.png');
   background-size: cover;
-  min-height: 100vh;
-  transform: rotate(180deg);
   min-height: 100vh;
   width: 100%;
   position: absolute;
+}
+
+.quienes-somos .contenedor-fondo {
+  background-image: url('../img/fondo2.png');
+  transform: rotate(180deg);
 }
 
 .contenido {
@@ -475,7 +478,7 @@ div.botones {
   align-items: center;
 }
 
-.imagen-quienes-somos {
+.contenido:nth-child(1) {
   grid-column-start: 1;
   grid-row-start: 2;
   justify-self: end;
@@ -492,7 +495,7 @@ div.botones {
   color: #000000;
 }
 
-.texto-quienes-somos {
+.contenido:nth-child(2) {
     grid-column-start: 2;
     grid-row-start: 2;
     display: grid;
@@ -527,3 +530,10 @@ div.botones {
   width: 18%; 
      background-color: #FFFFFF;
 } */
+
+/*______________________________Sección 1 Quienes Somos_____________________________*/
+
+.contacto .contenedor-fondo {
+  background-image: url('../img/fondo2.png');
+
+}
