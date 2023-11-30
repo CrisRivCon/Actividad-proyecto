@@ -181,7 +181,7 @@ nav a {
 }
 
 .seccion-1, .seccion-2, .seccion-3, .fondo-seccion-1, 
-.cubre-fotos, .fondo-seccion-2, .fondo-seccion-3, .quienes-somos {
+.cubre-fotos, .fondo-seccion-2, .fondo-seccion-3, .quienes-somos, .contenedor-fondo {
   min-height: 800px;
   height: 100vh;
   width: 100%;
@@ -280,15 +280,13 @@ div.botones {
   position: relative;
 }
 
-.imagenes img {
+.imagenes img, .contacto iframe {
   border: 20px solid white;
   border-radius: 40px;
 }
 .seccion-2 .imagenes img {
   box-shadow: 3px 3px 3px #555962;
   position: absolute;
-
-
 }
 
 .seccion-2 .imagenes img:first-child {
@@ -303,7 +301,6 @@ div.botones {
   z-index: 2;
   margin-top: 7%;
   left: -15%;
-  
 }
 
 /*______________________________Sección 3 Home_____________________________*/
@@ -408,8 +405,8 @@ footer .contacto, footer .ubicacion {
 .enlaces a{
   grid-column-start: 1;
   grid-column-end: 3;
-
 }
+
 footer .contacto div, footer .ubicacion div {
   width: 20px;
   height: 20px;
@@ -447,6 +444,7 @@ footer .contacto div, footer .ubicacion div {
 .footer-footer a {
   justify-self: center;
 }
+
 footer .ubicacion iframe {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -458,15 +456,14 @@ footer .ubicacion iframe {
 /*______________________________Sección 1 Quienes Somos_____________________________*/
 
 .contenedor-fondo {
-  background-image: url('../img/fondo2.png');
-  transform: rotate(180deg);
-  background-size: cover;
   background-position: center;
-  height: 100vh;
-  min-height: 800px;
-  width: 100%;
-  min-width: 1000px;
+  background-size: cover;
   position: absolute;
+}
+
+.quienes-somos .contenedor-fondo {
+  transform: rotate(180deg);
+  background-image: url('../img/fondo2.png');
 }
 
 .contenido {
@@ -538,4 +535,24 @@ footer .ubicacion iframe {
 .contacto .contenedor-fondo {
   background-image: url('../img/fondo2.png');
 
+}
+
+.contacto .ubicacion {
+  margin-left: 100px;
+  align-content: center;
+}
+
+.contacto h3, .contacto a {
+  color: #FFFFFF;
+
+}
+
+.texto-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
 }
