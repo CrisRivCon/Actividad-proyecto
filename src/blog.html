@@ -11,61 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Blog de la Asociación Chipi Gato Feliz</title>
-    <style>
-        .destacado img {
-            width: 224px;
-            height: 256px;
-        }
-
-        .articulos img {
-            width: 160px;
-            height: 176px;
-        }
-
-        .blog img {
-            border-radius: 15px;
-        }
-
-        .blog {
-            display: grid;
-            margin: auto;
-            grid-template-columns: repeat(4, 25%);
-            grid-template-rows: 50% 50%;
-            width: 80%;
-        }
-
-        .blog h2 {
-            font-size: 1.5em;
-        }
-
-        .destacado, .articulos>div {
-            display: flex;
-            border-top: 1px solid #555962;
-            border-bottom: 1px solid #555962;
-        }
-
-        .destacado p, .articulos p, .novedades div > p:last-child {
-            font-weight: lighter;
-
-        }
-        
-        .destacado {
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        .articulos {
-            display: flex;
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 2;
-        }
-
-        .blog a {
-            color: #93C01F;
-            text-decoration: underline;
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -75,10 +20,10 @@
             </div>
             <div>
                 <ul>
-                    <li class="select"><a href="/index.html">Inicio</a></li>
+                    <li><a href="/index.html">Inicio</a></li>
                     <li><a href="/src/quienes-somos.html">Quienes somos</a></li>
                     <li><a href="/src/contacto.html">Contacto</a></li>
-                    <li><a href="/src/blog.html">Blog</a></li>
+                    <li class="select"><a href="/src/blog.html">Blog</a></li>
                 </ul>
             </div>
             <div>
@@ -86,57 +31,66 @@
             </div>
         </nav>
     </header>
-    <main id="blog" class="blog">
-        <div class="destacado">
-            <img src="/img/IMG_8557.JPG" alt="gato blanco acostado">
-            <div class="texto-destacado">
-                <h2>¿Qúe tengo que hacer para adoptar un gato?</h2>
-                <p><strong>Pasos para adoptar</strong></p>
-                <p>Te explicamos los pasos que tienes que seguir si quieres adoptar
-                    alguno de nuestros gatos.</p>
-                <a href="#" class="leer-mas">Leer más</a>
+    <main id="blog" class="seccion-1">
+        <div class="blog">
+            <div class="titulo-blog">
+                <h1>BLOG</h1>
             </div>
-        </div>
-        <div class="novedades">
-            <h4>Nuevos</h4>
-            <div>
-                <p>
-                    ¿Qúe tengo que hacer para adoptar...
-                </p>
-                <p>22 Oct 2023</p>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet
-                </p>
-                <p>31 Oct 2023</p>
-            </div>
-            <div>
-                <p>
-                    ¿Lorem ipsum dolor sit amet
-                </p>
-                <p>31 Oct 2023</p>
-            </div>
-        </div>
-        <div class="articulos">
-            <div>
-                <img src="/img/IMG_8153.JPG" alt="">
-                <div texto-articulo>
-                    <h2>lorem ipsum dolor sit </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#" class="leer-mas">Leer más</a>
+            <div class="destacado">
+                <img src="/img/IMG_8557.JPG" alt="gato blanco acostado">
+                <div class="texto-articulo ">
+
+                        <h2>¿Qúe tengo que hacer para adoptar un gato?</h2>
+                    <div>
+                        <p><strong>Pasos para adoptar</strong></p>
+                        <p>Te explicamos los pasos que tienes que seguir si quieres adoptar
+                            alguno de nuestros gatos.</p>
+                    </div>
+
+                        <a href="articulo.html" class="leer-mas">Leer más</a>
                 </div>
             </div>
-            <div>
-                <img src="/img/IMG_8684.JPG" alt="">
-                <div texto-articulo>
-                    <h2>lorem ipsum dolor sit </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#" class="leer-mas">Leer más</a>
+            <div class="novedades">
+                <h2>Nuevos</h2>
+                <div class="entrada">
+                    <p>
+                        ¿Qúe tengo que hacer para adoptar...
+                    </p>
+                    <p>22 Oct 2023</p>
+                </div>
+                <div class="entrada">
+                    <p>
+                        Lorem ipsum dolor sit amet
+                    </p>
+                    <p>31 Oct 2023</p>
+                </div>
+                <div class="entrada">
+                    <p>
+                        ¿Lorem ipsum dolor sit amet
+                    </p>
+                    <p>31 Oct 2023</p>
+                </div>
+            </div>
+            <div class="articulos">
+                <div>
+                    <img src="/img/IMG_8153.JPG" alt="">
+                    <div class="texto-articulo ">
+                        <h2>lorem ipsum dolor sit </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="leer-mas">Leer más</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/IMG_8684.JPG" alt="">
+                    <div class="texto-articulo ">
+                        <h2>lorem ipsum dolor sit </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="leer-mas">Leer más</a>
+                    </div>
                 </div>
             </div>
         </div>
