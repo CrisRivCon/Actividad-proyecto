@@ -163,10 +163,13 @@ nav>div:last-child {
 
 nav .logo {
   height: 72px;
-  transition: 1s ease-in-out; /* _______ Transformación 1 _______*/
+  transition: 1s ease-in-out;
+  /* _______ Transformación 1 _______*/
 }
+
 nav .logo:hover {
-  transform: rotate(360deg); /* _______ Transformación 1 _______*/
+  transform: rotate(360deg);
+  /* _______ Transformación 1 _______*/
 }
 
 nav ul {
@@ -271,12 +274,15 @@ ul.breadcrumb li a:hover {
   display: grid;
   grid-template-rows: 100px 100px 217px;
   align-items: center;
-  transition: all 1s cubic-bezier(.68,-0.55,.27,1.55); /* _______ Transición 1 _______*/
-  left: -36%; /* _______ Transición 1 _______*/
+  transition: all 1s cubic-bezier(.68, -0.55, .27, 1.55);
+  /* _______ Transición 1 _______*/
+  left: -36%;
+  /* _______ Transición 1 _______*/
 }
 
 .seccion-1:hover .texto-seccion-1 {
-  left: 5%; /* _______ Transición 1 _______*/
+  left: 5%;
+  /* _______ Transición 1 _______*/
 }
 
 .espacio-izq-sec-1 {
@@ -321,16 +327,19 @@ div.botones {
   align-items: center;
 }
 
-.seccion-2:hover .texto-secc-2.espacio-izq-sec-1{
-  left: 10%; /* _______ Transición 2 _______*/
+.seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
+  left: 10%;
+  /* _______ Transición 2 _______*/
 }
 
 .texto-secc-2 {
   border-left: 2px solid #93C01F;
   padding-left: 40px;
   color: #323437;
-  left: -56%; /* _______ Transición 2 _______*/
-  transition: all 0.7s ease-in-out; /* _______ Transición 2 _______*/
+  left: -56%;
+  /* _______ Transición 2 _______*/
+  transition: all 0.7s ease-in-out;
+  /* _______ Transición 2 _______*/
 }
 
 .texto-secc-2 a {
@@ -388,12 +397,15 @@ div.botones {
   height: 424px;
   width: 616px;
   margin-top: -38%;
-  right: -100%; /* _______ Transición 2 _______*/
-  transition: all 0.9s ease-in-out; /* _______ Transición 2 _______*/
+  right: -100%;
+  /* _______ Transición 2 _______*/
+  transition: all 0.9s ease-in-out;
+  /* _______ Transición 2 _______*/
 }
 
 .seccion-2:hover .imagenes img:first-child {
-  right: 0; /* _______ Transición 2 _______*/
+  right: 0;
+  /* _______ Transición 2 _______*/
 }
 
 .seccion-2 .imagenes img:last-child {
@@ -403,11 +415,13 @@ div.botones {
   margin-top: 2%;
   left: 100%;
   /* _______ Transición 2 _______*/
-  transition: all 0.9s 0.1s ease-in-out; /* _______ Transición 2 _______*/
+  transition: all 0.9s 0.1s ease-in-out;
+  /* _______ Transición 2 _______*/
 }
 
 .seccion-2:hover .imagenes img:last-child {
-  left: -15%; /* _______ Transición 2 _______*/
+  left: -15%;
+  /* _______ Transición 2 _______*/
 }
 
 /* Tooltip */
@@ -420,7 +434,7 @@ div.botones {
 .texto-secc-2:hover .tooltip {
   visibility: visible;
   opacity: 1;
-  }
+}
 
 /*______________________________Sección 3 Home_____________________________*/
 
@@ -438,13 +452,17 @@ div.botones {
   color: #FFFFFF;
   font-size: 48px;
   text-align: center;
-  position: relative; /* _______ Transición 3 _______*/
-  transition: all 0.9s 0.1s cubic-bezier(.68,-0.55,.27,1.55); /* _______ Transición 3 _______*/
-  left: 100%; /* _______ Transición 3 _______*/
+  position: relative;
+  /* _______ Transición 3 _______*/
+  transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55);
+  /* _______ Transición 3 _______*/
+  left: 100%;
+  /* _______ Transición 3 _______*/
 }
 
 .seccion-3:hover .texto-secc-3 h2 {
-  left: 0; /* _______ Transición 3 _______*/
+  left: 0;
+  /* _______ Transición 3 _______*/
 }
 
 .cards {
@@ -453,12 +471,16 @@ div.botones {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  transition: all 0.9s 0.1s cubic-bezier(.68,-0.55,.27,1.55); /* _______ Transición 3 _______*/
-  top: 480px;  /* _______ Transición 3 _______*/
+  transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55);
+  /* _______ Transición 3 _______*/
+  top: 480px;
+  /* _______ Transición 3 _______*/
 }
 
 .seccion-3:hover .cards {
-  transform: translateY(-480px); /* _______ Transición 3 _______*/ /* _______ Transformación 2 _______*/
+  transform: translateY(-480px);
+  /* _______ Transición 3 _______*/
+  /* _______ Transformación 2 _______*/
 }
 
 .card {
@@ -655,7 +677,7 @@ footer .ubicacion iframe {
 }
 
 /*________ Tooltip ________*/
-  .tooltip {
+.tooltip {
   visibility: hidden;
   width: 120px;
   background-color: #FFFFFF;
@@ -667,17 +689,17 @@ footer .ubicacion iframe {
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s;
-  }
-  
-  .imagen-quienes-somos .tooltip {
-    bottom: 12%;
-  left: 30%;
-  }
+}
 
-  .imagen-quienes-somos:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-    }
+.imagen-quienes-somos .tooltip {
+  bottom: 12%;
+  left: 30%;
+}
+
+.imagen-quienes-somos:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
 /*______________________________Sección 1 Contacto_____________________________*/
 
