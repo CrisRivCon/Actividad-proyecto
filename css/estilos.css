@@ -116,7 +116,6 @@ span.boton-secundario {
 
 .boton-secundario:hover {
   background-color: #cd747e;
-
 }
 
 .boton-primario:active,
@@ -164,10 +163,10 @@ nav>div:last-child {
 
 nav .logo {
   height: 72px;
-  transition: 1s ease-in-out; /* _______ Transformación 2 _______*/
+  transition: 1s ease-in-out; /* _______ Transformación 1 _______*/
 }
 nav .logo:hover {
-  transform: rotate(360deg); /* _______ Transformación 2 _______*/
+  transform: rotate(360deg); /* _______ Transformación 1 _______*/
 }
 
 nav ul {
@@ -200,7 +199,7 @@ div.breadcrumb {
   z-index: 1;
   margin-top: 5px;
   background-color: #F7F8F9;
-  box-shadow: 4px 4px 4px #D7D7D7;
+  box-shadow: 4px 4px 3px #D7D7D7;
 }
 
 ul.breadcrumb {
@@ -213,7 +212,7 @@ ul.breadcrumb li {
   display: inline;
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb li+li::before {
   padding: 8px;
   content: url('/img/icon/gato\(3\).png');
 }
@@ -411,6 +410,18 @@ div.botones {
   left: -15%; /* _______ Transición 2 _______*/
 }
 
+/* Tooltip */
+.texto-secc-2 .tooltip {
+  bottom: 66%;
+  left: 53%;
+  border: 1px solid #93C01F;
+}
+
+.texto-secc-2:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  }
+
 /*______________________________Sección 3 Home_____________________________*/
 
 .fondo-seccion-3 {
@@ -447,7 +458,7 @@ div.botones {
 }
 
 .seccion-3:hover .cards {
-  transform: translateY(-480px); /* _______ Transición 3 _______*/ /* _______ Transformación 1 _______*/
+  transform: translateY(-480px); /* _______ Transición 3 _______*/ /* _______ Transformación 2 _______*/
 }
 
 .card {
@@ -654,12 +665,15 @@ footer .ubicacion iframe {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 12%;
-  left: 30%;
   opacity: 0;
   transition: opacity 0.5s;
   }
   
+  .imagen-quienes-somos .tooltip {
+    bottom: 12%;
+  left: 30%;
+  }
+
   .imagen-quienes-somos:hover .tooltip {
     visibility: visible;
     opacity: 1;
