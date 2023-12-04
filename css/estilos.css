@@ -130,7 +130,7 @@ nav {
   background-color: #FFFFFF;
   border: 1px solid #93C01F;
   border-radius: 10PX;
-  box-shadow: 4px 4px 4px #555962;
+  box-shadow: 4px 4px 4px #323437;
   height: 72px;
   margin: 30px 5% 0 5%;
   min-width: 742px;
@@ -217,7 +217,7 @@ ul.breadcrumb li {
 
 ul.breadcrumb li+li::before {
   padding: 8px;
-  content: url('/img/icon/gato\(3\).png');
+  content: url('../img/icon/gato\(3\).png');
 }
 
 ul.breadcrumb a {
@@ -379,6 +379,7 @@ div.botones {
 .imagenes {
   z-index: 0;
   position: relative;
+  max-width: 800px;
 
 }
 
@@ -404,7 +405,7 @@ div.botones {
 }
 
 .seccion-2:hover .imagenes img:first-child {
-  right: 0;
+  right: 74px;
   /* _______ Transición 2 _______*/
 }
 
@@ -807,6 +808,7 @@ textarea {
   grid-template-columns: repeat(3, 23%) 31%;
   grid-template-rows: 15% 10% 330px 35%;
   width: 70%;
+  max-width: 1100px;
 }
 
 #blog {
@@ -965,7 +967,7 @@ dt {
 }
 
 .img-cabecera {
-  background-image: url('/img/IMG_8557.JPG');
+  background-image: url('../img/IMG_8557.JPG');
   width: 224px;
   height: 256px;
   border-radius: 20px;
