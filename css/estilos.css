@@ -377,12 +377,13 @@ div.botones {
 }
 
 .imagenes img,
+.imagenes video,
 .contacto iframe {
   border: 20px solid white;
   border-radius: 40px;
 }
 
-.seccion-2 .imagenes img {
+.seccion-2 .imagenes img, .imagenes video {
   box-shadow: 3px 3px 3px #555962;
   position: absolute;
 }
@@ -402,8 +403,8 @@ div.botones {
   /* _______ Transición 2 _______*/
 }
 
-.seccion-2 .imagenes img:last-child {
-  height: 312px;
+.seccion-2 .imagenes video:last-child {
+  height: 253px;
   width: 416px;
   z-index: 2;
   margin-top: 2%;
@@ -413,7 +414,7 @@ div.botones {
   /* _______ Transición 2 _______*/
 }
 
-.seccion-2:hover .imagenes img:last-child {
+.seccion-2:hover .imagenes video:last-child {
   left: -15%;
   /* _______ Transición 2 _______*/
 }
@@ -707,7 +708,7 @@ footer .ubicacion iframe {
   padding-bottom: 50px;
 }
 
-.contacto h3,
+.contenido .contacto h3,
 .contacto a {
   color: #FFFFFF;
   margin: 10px 0;
