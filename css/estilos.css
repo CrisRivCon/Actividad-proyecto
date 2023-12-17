@@ -164,6 +164,9 @@ nav .logo:hover {
   transform: rotate(360deg);
   /* _______ Transformación 1 _______*/
 }
+nav>div:first-child>a {
+  padding-top: 7px;
+}
 
 nav ul {
   align-items: center;
@@ -234,7 +237,7 @@ ul.breadcrumb li a:hover {
 }
 
 .fondo-seccion-1 {
-  background-image: url('../img/figma/disparo-horizontal-dos-gatos-sentados-sobre-fondo-borroso.jpg');
+  background-image: url('../img/disparo-horizontal-dos-gatos-sentados-sobre-fondo-borroso.jpg');
   background-size: cover;
   position: absolute;
 }
@@ -507,10 +510,12 @@ div.botones {
 .card:last-child img {
   height: 74px;
   width: 74px;
+  align-self: end;
 }
 
 .card .descripcion {
   font-weight: lighter;
+  text-align: justify;
   width: 200px;
 }
 
@@ -583,7 +588,7 @@ footer .ubicacion div,
 
 .footer-footer {
   display: grid;
-  grid-template-rows: 10% 89%;
+  grid-template-rows: 10% 42% 20%;
   grid-column-start: 1;
   grid-column-end: 4;
   width: 100%;
@@ -597,6 +602,7 @@ footer .ubicacion div,
 }
 
 .footer-footer a {
+  font-size: 0.8em;
   justify-self: center;
 }
 
@@ -960,15 +966,23 @@ dt {
   margin-top: 50px;
 }
 
+.cabecera iframe {
+  justify-self: center;
+  grid-column: 1/3;
+}
+
 .img-cabecera {
-  background-image: url('../img/IMG_8557.JPG');
   width: 224px;
   height: 256px;
   border-radius: 20px;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   grid-column: 1/2;
   box-shadow: 4px 4px 4px #D7D7D7;
+}
+
+.articulo-1 .img-cabecera {
+  background-image: url('../img/gato-gris-y-blanco.jpg');
 }
 
 .texto-cabecera {
@@ -986,9 +1000,38 @@ dt {
 }
 
 .logo-vertical {
-  background-image: url('../img/logo-vertical.png');
+  background-image: url('../img/logo/logo-vertical.png');
   width: 411px;
   height: 99px;
   background-size: cover;
   margin: 30px auto 100px auto;
+}
+
+/*______________________________ Artículo Blog Beneficios _____________________________*/
+
+.sonidos {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.sonidos div {
+  border: 2px dotted #a1c644;
+  padding: 10px;
+  width: fit-content;
+  margin: 10px;
+}
+
+.sonidos p:first-child{
+  color: #93C01F;
+  font-weight: 500;
+}
+
+.sonidos small {
+  font-size: xx-small;
+}
+
+.articulo-3 .img-cabecera {
+  background-image: url('../img/gata-carey.jpg');
 }
