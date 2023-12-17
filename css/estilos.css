@@ -317,7 +317,7 @@ div.botones {
 }
 
 .fondo-seccion-2 {
-  background-image: url('../img/Fondo\ franja\ 2.png');
+  background-image: url('../img/fondo-franja-2.png');
   display: grid;
   grid-template-columns: minmax(370px, 50%) 50%;
   align-items: center;
@@ -437,7 +437,7 @@ div.botones {
 /*______________________________Sección 3 Home_____________________________*/
 
 .fondo-seccion-3 {
-  background-image: url('../img//fondocolabora.JPG');
+  background-image: url('../img/fondo-colabora.JPG');
   box-shadow: 3px 3px 3px #555962;
 }
 
@@ -622,7 +622,7 @@ footer .ubicacion iframe {
 
 .quienes-somos .contenedor-fondo {
   transform: rotate(180deg);
-  background-image: url('../img/fondo2.png');
+  background-image: url('../img/fondo-2.png');
 }
 
 .contenido {
@@ -705,7 +705,7 @@ footer .ubicacion iframe {
 /*______________________________Sección 1 Contacto_____________________________*/
 
 .contacto .contenedor-fondo {
-  background-image: url('../img/fondo2.png');
+  background-image: url('../img/fondo-2.png');
 }
 
 .contacto .ubicacion {
