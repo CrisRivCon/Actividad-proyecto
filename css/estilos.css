@@ -1035,3 +1035,8 @@ dt {
 .articulo-3 .img-cabecera {
   background-image: url('../img/gata-carey.jpg');
 }
+
+.articulo-3 .cuerpo .video {
+  display: flex;
+  justify-content: center;
+}
