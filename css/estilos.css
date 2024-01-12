@@ -75,32 +75,41 @@ a {
 }
 
 .boton-primario,
-.boton-secundario {
+.boton-secundario,
+.boton-terciario {
   border-radius: 20px;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
   display: inline-block;
   height: 50px;
   text-align: center;
+  cursor: pointer;
   width: 150px;
-  color: #FFFFFF;
   box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 span.boton-primario,
-span.boton-secundario {
+span.boton-secundario,
+span.boton-terciario {
   padding-top: 12px;
 
 }
 
 .boton-primario {
   background-color: #93C01F;
+  color: #FFFFFF;
 }
 
 .boton-secundario {
   background-color: #cb6370;
+  color: #FFFFFF;
+}
+
+.boton-terciario {
+  background-color: #FFFFFF;
+  color: #93C01F;
 }
 
 .boton-primario:hover {
@@ -112,7 +121,8 @@ span.boton-secundario {
 }
 
 .boton-primario:active,
-.boton-secundario:active {
+.boton-secundario:active,
+.boton-terciario:active {
   box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -261,7 +271,7 @@ ul.breadcrumb li a:hover {
   min-height: 800px;
   height: 100vh;
   width: 100%;
-  min-width: 1100px;
+  /*min-width: 1100px;*/
 }
 
 .texto-seccion-1 {
@@ -442,8 +452,8 @@ div.botones {
 }
 
 .texto-secc-3 {
-  position: relative;
   margin-top: 10%;
+  overflow: hidden;
 }
 
 .texto-secc-3 h2 {
@@ -461,6 +471,36 @@ div.botones {
 .seccion-3:hover .texto-secc-3 h2 {
   left: 0;
   /* _______ Transición 3 _______*/
+}
+
+.seccion-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  width: 90%;
+  height: 60vh;
+  background-color: #cd747e;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+}
+
+.tab {
+  width: 100%;
+  height: 90%;
+  background-color: #D7D7D7;
+}
+
+.selectores {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px;
 }
 
 .cards {
@@ -530,7 +570,7 @@ div.botones {
   background-color: #555962;
   height: 400px;
   width: 100%;
-  min-width: 1100px;
+  /*min-width: 1100px;*/
 }
 
 .texto-footer {
@@ -918,8 +958,7 @@ textarea {
 
 /*______________________________ Artículo Blog _____________________________*/
 
-strong,
-dt {
+strong,summary { /* acordeón */
   font-weight: 500;
 }
 
@@ -946,10 +985,24 @@ dt {
   border-right: 2px solid #93C01F;
 }
 
-.articulo dd,
+.articulo details, /* acordeón */
 .cuerpo p {
   margin-bottom: 30px;
   color: #323437;
+}
+
+.articulo summary { /* acordeón */
+  list-style: none;
+  cursor: pointer;
+}
+
+.articulo summary::before { /* acordeón */
+  content: url('../img/icon/pata.png');
+}
+/*<a href="https://www.flaticon.es/iconos-gratis/gato" title="gato iconos">Gato iconos creados por Freepik - Flaticon</a>*/
+
+.articulo details p { /* acordeón */
+  padding-left: 20px;
 }
 
 .articulo h1 {
