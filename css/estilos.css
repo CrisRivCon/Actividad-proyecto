@@ -271,7 +271,7 @@ ul.breadcrumb li a:hover {
   min-height: 800px;
   height: 100vh;
   width: 100%;
-  /*min-width: 1100px;*/
+  min-width: 770px;
 }
 
 .texto-seccion-1 {
@@ -282,7 +282,7 @@ ul.breadcrumb li a:hover {
   align-items: center;
   transition: all 1s cubic-bezier(.68, -0.55, .27, 1.55);
   /* _______ Transición 1 _______*/
-  left: -36%;
+  left: -66%;
   /* _______ Transición 1 _______*/
 }
 
@@ -342,7 +342,7 @@ div.botones {
   border-left: 2px solid #93C01F;
   padding-left: 40px;
   color: #323437;
-  left: -56%;
+  left: -76%;
   /* _______ Transición 2 _______*/
   transition: all 0.7s ease-in-out;
   /* _______ Transición 2 _______*/
@@ -405,14 +405,14 @@ div.botones {
   height: 424px;
   width: 616px;
   margin-top: -38%;
-  right: -100%;
+  left: 500%;
   /* _______ Transición 2 _______*/
   transition: all 0.9s ease-in-out;
   /* _______ Transición 2 _______*/
 }
 
 .seccion-2:hover .imagenes img:first-child {
-  right: 74px;
+  left: 10px;
   /* _______ Transición 2 _______*/
 }
 
@@ -446,14 +446,15 @@ div.botones {
 
 /*______________________________Sección 3 Home_____________________________*/
 
+.seccion-3 {
+  display: grid;
+  grid-template: 70vh / 10% minmax(180px, 20vw) minmax(550px, 80vw);
+  padding-top: 20vh;
+}
+
 .fondo-seccion-3 {
   background-image: url('../img/fondo-colabora.JPG');
   box-shadow: 3px 3px 3px #555962;
-}
-
-.texto-secc-3 {
-  margin-top: 10%;
-  overflow: hidden;
 }
 
 .texto-secc-3 h2 {
@@ -461,50 +462,42 @@ div.botones {
   font-size: 48px;
   text-align: center;
   position: relative;
-  /* _______ Transición 3 _______*/
-  transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55);
-  /* _______ Transición 3 _______*/
-  left: 100%;
-  /* _______ Transición 3 _______*/
+  transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55); /* _______ Transición 3 _______*/
+  left: 100%;  /* _______ Transición 3 _______*/
 }
 
 .seccion-3:hover .texto-secc-3 h2 {
-  left: 0;
-  /* _______ Transición 3 _______*/
+  left: 0;/* _______ Transición 3 _______*/
 }
 
-.seccion-3 {
-  display: flex;
-  flex-direction: column;
-}
 
 .tabs {
-  width: 90%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin: auto;
+  width: 80%;
+  position: relative;
 }
 
 .tab {
   width: 100%;
-  height: 90%;
-  background-color: #D7D7D7;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
-  border: 1px solid #93C01F;
-  border-radius: 30px;
-  box-shadow: 3px 3px 3px #555962;
+  align-items: center;
+  justify-content: space-around;
   padding: 30px;
+  position: absolute;
+  visibility: hidden;
+  border: 3px solid #93C01F;
+  border-left: none;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 3px 3px 3px #555962;
+}
+
+.activo {
+  visibility: visible;
 }
 
 .tab h3 {
   color: #cb6370;
-  
 }
 
 .tab img {
@@ -512,66 +505,74 @@ div.botones {
   width: 55px;
 }
 
-.selectores {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding: 20px;
-}
-
-
-
-.cards {
-  position: relative;
-  margin-top: 7%;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.tabs, .selectores {
+  height: 65vh;
   transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55);
   /* _______ Transición 3 _______*/
   top: 480px;
   /* _______ Transición 3 _______*/
 }
 
-.seccion-3:hover .cards {
+.tab, .boton-tab {
+  background-color: #FFFFFF;
+}
+
+.selectores {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/3;
+  position: relative;
+}
+
+.boton-tab:first-child {
+  border-radius: 10px 0 0 0;
+}
+.boton-tab:last-child {
+  border-radius: 0 0 0 10px;
+}
+
+.boton-tab {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #93C01F;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #93C01F;
+  opacity: 0.5;
+}
+
+.boton-tab:hover {
+  box-shadow: 3px 3px 3px #323437;
+}
+
+.tab-activo {
+  box-shadow: 3px 3px 3px #555962;
+  border-width: 3px;
+  border-right: none;
+  opacity: 1;
+}
+
+.seccion-3:hover .tabs, .seccion-3:hover .selectores {
   transform: translateY(-480px);
   /* _______ Transición 3 _______*/
   /* _______ Transformación 2 _______*/
 }
 
-.card {
-  background-color: #FFFFFF;
-  border: 1px solid #93C01F;
-  border-radius: 30px;
-  box-shadow: 3px 3px 3px #555962;
-  height: 388px;
-  min-width: 289px;
-  text-align: center;
-  width: 289px;
-  display: grid;
-  grid-template-rows: 20% 15% 35% 10% 20%;
-  justify-items: center;
-  align-items: center;
-}
-
-.card h3 {
-  color: #cb6370;
-  margin-top: 20px;
-}
-
-
-
-.card:first-child img,
-.card:last-child img {
+.tab:first-child img,
+.tab:last-child img {
   height: 74px;
   width: 74px;
-  align-self: end;
 }
 
-.card .descripcion {
-  font-weight: lighter;
+.tab .descripcion {
   text-align: justify;
-  width: 200px;
+  max-width: 400px;
 }
 
 .card-email {
