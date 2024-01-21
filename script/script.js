@@ -34,10 +34,22 @@ const punto = document.querySelectorAll('.punto');
 
 punto.forEach(( cadaPunto, i ) =>{
     punto[i].addEventListener('click', (e) =>{
-        let operacion = i * -50;
+        let operacion = i * -25;
         grande.style.transform = `translateX(${operacion}%)`;
-        let activo = document.querySelector('.activo');
-        activo.classList.remove('activo');
-        e.target.classList.add('activo');
-    })
-})
+        let activo = document.querySelector('.punto-activo');
+        activo.classList.remove('punto-activo');
+        e.target.classList.add('punto-activo');
+    });
+});
+
+// Menu responsive
+
+let botonMenu = document.getElementById('abrir-menu');
+let menu = document.getElementById('menu');
+
+botonMenu.addEventListener('click', mostrarMenu);
+
+function mostrarMenu() {
+    menu.classList.toggle('nav-visible');
+};
+

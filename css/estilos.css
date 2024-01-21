@@ -129,43 +129,31 @@ span.boton-terciario {
 }
 
 /*______________________________Header_____________________________*/
+
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   background-color: #FFFFFF;
   border: 1px solid #93C01F;
   border-radius: 10PX;
   box-shadow: 4px 4px 4px #323437;
-  height: 72px;
-  margin: 30px 5% 0 5%;
-  min-width: 742px;
-  position: fixed;
   width: 90%;
+  position: fixed;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 150px minmax(400px, auto) 200px;
-  grid-template-rows: 70px;
-}
-
-.nav-articulos {
-  position: relative;
-}
-
-nav>div {
-  height: 100%;
-}
-
-nav>div:first-child,
-nav>div:last-child {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding: 0.3em 1em;
 }
 
-nav>div:last-child {
-  justify-content: left;
-}
 
 nav .logo {
-  height: 72px;
+  height: 56px;
   transition: 1s ease-in-out;
   /* _______ Transformación 1 _______*/
 }
@@ -174,20 +162,16 @@ nav .logo:hover {
   transform: rotate(360deg);
   /* _______ Transformación 1 _______*/
 }
-nav>div:first-child>a {
-  padding-top: 7px;
+
+.icono-menu{
+  display: none;
 }
 
-nav ul {
-  align-items: center;
+
+nav .enlaces {
   display: flex;
-  height: 100%;
+  align-items: center;
   justify-content: space-around;
-  margin: auto;
-  max-width: 600px;
-}
-
-nav li {
   list-style: none;
 }
 
@@ -198,6 +182,75 @@ nav a {
 
 .select {
   text-decoration: underline;
+}
+
+.icono-menu{
+ width: 30px;
+ cursor: pointer;
+}
+
+.boton-colabora-menu {
+  display: none;
+}
+
+
+@media (width <= 572px) {
+  nav .enlaces{
+    position: absolute;
+    flex-direction: column;
+    background-color: #323437;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+    margin-top: 1em;
+    border-radius: 10px;
+  }
+
+  .enlaces.nav-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav .enlaces li {
+    padding: 1em 2em;
+    align-self: flex-end;
+  }
+
+  nav .enlaces a {
+    color: #FFFFFF;
+    font-size: large;
+  
+  }nav .enlaces a:hover {
+    color: #93C01F;
+  }
+  .icono-menu {
+    display: block;
+  }
+  .boton-colabora-menu {
+    display: block;
+  }
+  .select {
+    text-decoration: none;
+  }
+  .nav-colabora {
+    display: none;
+  }
+}
+
+@media (574px <= width <= 800px ) {
+  nav {
+    min-width: 572px;
+  }
+
+  nav .enlaces {
+    gap: 1em;
+  }
+}
+
+@media (width >= 800px ) {
+  nav .enlaces {
+    gap: 3em;
+  }
 }
 
 /* Breadcrumb */
@@ -281,13 +334,14 @@ ul.breadcrumb li a:hover {
   grid-template-rows: 100px 100px 217px;
   align-items: center;
   transition: all 1s cubic-bezier(.68, -0.55, .27, 1.55);
+  padding: 0 4em;
   /* _______ Transición 1 _______*/
-  left: -66%;
+  left: -150%;
   /* _______ Transición 1 _______*/
 }
 
 .seccion-1:hover .texto-seccion-1 {
-  left: 5%;
+  left: 0;
   /* _______ Transición 1 _______*/
 }
 
@@ -312,6 +366,39 @@ div.botones {
   max-width: 380px;
 }
 
+@media (width <= 572px) {
+  .seccion-1,
+.seccion-2,
+.seccion-3,
+.fondo-seccion-1,
+.cubre-fotos,
+.fondo-seccion-2,
+.fondo-seccion-3,
+.quienes-somos,
+.contenedor-fondo,
+.blog {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  min-width: 0;
+}
+
+.texto-seccion-1 {
+  padding: 1em;
+}
+div.botones {
+  max-width: 330px;
+}
+}
+
+@media (574px <= width <= 800px ) {
+
+}
+
+@media (width >= 800px ) {
+
+}
+
 /*______________________________Sección 2 Home_____________________________*/
 
 .seccion-2,
@@ -320,7 +407,9 @@ div.botones {
   position: relative;
   overflow: hidden;
 }
-
+.seccion-2{
+  padding: 0 3em;
+}
 .fondo-seccion-2,
 .fondo-seccion-3 {
   position: relative;
@@ -334,15 +423,15 @@ div.botones {
 }
 
 .seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
-  left: 10%;
+  left: 0;
   /* _______ Transición 2 _______*/
 }
 
 .texto-secc-2 {
   border-left: 2px solid #93C01F;
-  padding-left: 40px;
+  padding-left: 2em;
   color: #323437;
-  left: -76%;
+  left: -200%;
   /* _______ Transición 2 _______*/
   transition: all 0.9s 0.1s ease-in-out;
   /* _______ Transición 2 _______*/
@@ -399,7 +488,7 @@ div.botones {
   left: 0;
 }
 .carrousel .grande {
-  width: 200%;
+  width: 400%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -410,7 +499,7 @@ div.botones {
 }
 
 .carrousel img, .carrousel video {
-  width: calc(100% / 2);
+  width: calc(100% / 4);
   min-height: 10vh;
   margin-right: 5em;
 }
@@ -441,8 +530,7 @@ div.botones {
 
 }
 
-.carrousel .punto.activo {
-  
+.carrousel .punto-activo {
   background-color: #FFFFFF;
   border: 1px solid #93C01F;
 }
@@ -454,45 +542,6 @@ div.botones {
   box-shadow: 2px 2px 3px #555962;
 }
 
-/* .imagenes {
-  z-index: 0;
-  position: relative;
-  max-width: 800px;
-
-}
-
-
-
-.seccion-2 .imagenes img, .imagenes video {
-  box-shadow: 3px 3px 3px #555962;
-  position: absolute;
-}
-
-.seccion-2 .imagenes img:first-child {
-  height: 424px;
-  width: 616px;
-  margin-top: -38%;
-  left: 500%;
-  transition: all 0.9s ease-in-out;
-}
-
-.seccion-2:hover .imagenes img:first-child {
-  left: 10px;
-}
-
-.seccion-2 .imagenes video:last-child {
-  height: 253px;
-  width: 416px;
-  z-index: 2;
-  margin-top: 2%;
-  left: 100%;
-  transition: all 0.9s 0.1s ease-in-out;
-}
-
-.seccion-2:hover .imagenes video:last-child {
-  left: -15%;
-} */
-
 /* Tooltip */
 .texto-secc-2 .tooltip {
   bottom: 66%;
@@ -503,6 +552,33 @@ div.botones {
 .texto-secc-2:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+@media (width <= 572px) {
+ .seccion-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+  padding: 10em 2em;
+  min-height: 200vh;
+ }
+
+ .tooltip {
+  display: none;
+ }
+ .texto-secc-2 {
+  margin: 0;
+  left: -100%;
+  margin-top: 5em;
+ }
+}
+
+@media (574px <= width <= 800px ) {
+
+}
+
+@media (width >= 800px ) {
+
 }
 
 /*______________________________Sección 3 Home_____________________________*/
@@ -617,10 +693,7 @@ div.botones {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-
-.tab-imagen {
-  padding: 5px;
+  padding: .5em;
 }
 
 .tab-imagen img {
@@ -645,6 +718,39 @@ div.botones {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media (width <= 572px) {
+  .tab-imagen{
+    visibility: hidden;
+  }
+
+  .seccion-3 {
+    grid-template: 70vh / 1px minmax(140px, 20vw) minmax(300px, 80vw);
+    padding-top: 20vh;
+  }
+  .tab {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+  .tabs{
+    width: 100%;
+  }
+  .boton-tab {
+    left: 3em;
+  }
+  .boton-tab.tab-activo{
+    left: 0.5em;
+  }
+ }
+ 
+ @media (574px <= width <= 800px ) {
+ 
+ }
+ 
+ @media (width >= 800px ) {
+ 
+ }
 
 /*______________________________Footer_____________________________*/
 .footer {
@@ -732,6 +838,33 @@ footer .ubicacion iframe {
   grid-row: 4/6;
   border-radius: 4%;
 }
+
+@media (width <= 572px) {
+  .texto-footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+  }
+  .texto-footer div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 1em;
+  }
+  .footer {
+    height: auto;
+  }
+ }
+ 
+ @media (574px <= width <= 800px ) {
+ 
+ }
+ 
+ @media (width >= 800px ) {
+ 
+ }
 
 /*______________________________Sección 1 Quienes Somos_____________________________*/
 
