@@ -151,7 +151,9 @@ nav {
   padding: 0.3em 1em;
 }
 
-
+.nav-articulos {
+  position: relative;
+}
 nav .logo {
   height: 56px;
   transition: 1s ease-in-out;
@@ -421,7 +423,7 @@ div.botones {
 }
 
 .seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
-  left: 0;
+  left: 10%;
   /* _______ Transición 2 _______*/
 }
 
@@ -479,6 +481,7 @@ div.botones {
   border-radius: 40px;
   transition: all 0.9s 0.1s ease-in-out;
   left: 150%;
+  top: 5%;
   position: relative;
 }
 
@@ -610,16 +613,18 @@ div.botones {
   flex-direction: column;
   gap: 10em;
   padding: 10em 2em;
-  min-height: 180vh;
+  min-height: 1400px;
  }
-
  .tooltip {
   display: none;
  }
  .texto-secc-2 {
   margin: 0;
   left: -100%;
-  margin-top: 5em;
+  margin-top: em;
+ }
+ .seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
+  left: 0;
  }
 }
 
@@ -1002,7 +1007,7 @@ footer .ubicacion iframe {
 }
 @media (width <= 800px) {
   .quienes-somos, .contenedor-fondo {
-    height: 200vh;
+    height: 1500px;
   }
   .texto-quienes-somos{
     align-items: center;
@@ -1017,7 +1022,7 @@ footer .ubicacion iframe {
     padding: 10em 1em;
   }
   .imagen-quienes-somos img {
-    width: auto;
+    width: 100%;
     height: auto;
   }
   .imagen-quienes-somos {
@@ -1048,7 +1053,10 @@ footer .ubicacion iframe {
   width: 125px;
   align-self: center;
 }
-
+.texto-contacto {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
 .texto-contacto h1 {
   color: #93C01F;
 }
