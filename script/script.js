@@ -42,6 +42,40 @@ punto.forEach(( cadaPunto, i ) =>{
     });
 });
 
+// Lightbox
+
+let lightbox = document.querySelector('.lightbox');
+let cerrar = document.querySelector('.cerrar');
+let imgGrande = document.querySelector('.img-grande');
+let videoGrande = document.querySelector('.video-grande');
+let elementos = document.querySelectorAll('.elementos');
+
+elementos.forEach(elemento => {
+    elemento.addEventListener('click', e =>{
+        let etiqueta = e.target.localName;
+        let ruta = elemento.src;
+        
+        lightbox.classList.add('activo');
+
+        if (etiqueta == 'img'){
+            imgGrande.classList.add('activo');
+            imgGrande.setAttribute('src', ruta);
+        } else if (etiqueta == 'video'){
+            videoGrande.classList.add('activo');
+            videoGrande.setAttribute('src', ruta);
+        }
+
+    });
+});
+
+cerrar.addEventListener('click', ()=>{
+    lightbox.classList.remove('activo');
+    let activo = document.querySelector('.lightbox .activo');
+    activo.classList.remove('activo');
+    activo.setAttribute('src', '');
+});
+
+
 // Menu responsive
 
 let botonMenu = document.getElementById('abrir-menu');
