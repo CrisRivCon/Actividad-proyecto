@@ -587,7 +587,8 @@ div.botones {
 }
 
 .lightbox .img-grande {
-  height: 80vh;
+  max-width: 90%;
+  max-height: 90%;
   box-shadow: 2px 2px 3px #555962;
   border-radius: 30px;
   display: none;
@@ -597,7 +598,8 @@ div.botones {
 }
 
 .lightbox .video-grande {
-  width: 80%;
+  max-width: 90%;
+  max-height: 90%;
   box-shadow: 2px 2px 3px #555962;
   border-radius: 30px;
   display: none;
@@ -1025,7 +1027,7 @@ footer .ubicacion iframe {
     height: auto;
   }
   .imagen-quienes-somos {
-    width: 80%;
+    width: 90%;
   }
 }
 /*______________________________Sección 1 Contacto_____________________________*/
@@ -1287,6 +1289,9 @@ strong,summary { /* acordeón */
 
 .articulo summary::before { /* acordeón */
   content: url('../img/icon/pata.png');
+}
+.articulo details[open] summary::before { /* acordeón */
+  content: url('../img/icon/pata-girada.png');
 }
 /*<a href="https://www.flaticon.es/iconos-gratis/gato" title="gato iconos">Gato iconos creados por Freepik - Flaticon</a>*/
 
