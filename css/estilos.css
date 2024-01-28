@@ -14,7 +14,9 @@ body {
 .boton-sin-sombra {
   all: unset;
 }
-
+button {
+  all: unset;
+}
 button:hover {
   cursor: pointer;
 }
@@ -128,6 +130,14 @@ span.boton-terciario {
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
+/*______Accesibilidad______*/
+.boton-primario-acc {
+  color: #121212;
+}
+.boton-secundario-acc {
+  color: #121212;
+}
+
 /*______________________________Header_____________________________*/
 
 
@@ -196,8 +206,19 @@ nav a {
   display: none;
 }
 
+/*_____Accesibilidad_____*/
+.temas {
+  display: flex;
+  gap: 1em;
+  justify-content: end;
+}
 
-@media (width <=572px) {
+.temas a {
+  cursor: pointer;
+}
+/*_______________________*/
+
+@media (width <=574px) {
   nav .enlaces {
     position: absolute;
     flex-direction: column;
@@ -256,7 +277,7 @@ nav a {
   }
 }
 
-@media (width >=800px) {
+@media (width > 800px) {
   nav .enlaces {
     gap: 3em;
   }
@@ -350,14 +371,9 @@ ul.breadcrumb li a:hover {
   /* _______ Transición 1 _______*/
 }
 
-.seccion-1:hover .texto-seccion-1 {
+.texto-seccion-1-transicion {
   left: 0;
   /* _______ Transición 1 _______*/
-}
-
-.espacio-izq-sec-1 {
-  left: 10%;
-  position: relative;
 }
 
 .seccion-1 h1 {
@@ -421,6 +437,9 @@ div.botones {
 
 .seccion-2 {
   padding: 0 3em;
+  display: grid;
+  grid-template-columns: minmax(370px, 50%) 50%;
+  align-items: center;
 }
 
 .fondo-seccion-2,
@@ -429,37 +448,42 @@ div.botones {
 }
 
 .fondo-seccion-2 {
-  background-image: url('../img/fondo-franja-2.png');
-  display: grid;
-  grid-template-columns: minmax(370px, 50%) 50%;
-  align-items: center;
+  background-image: url('../img/svg/fondo-seccion-2.svg');
 }
 
+
+/*
 .seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
   left: 10%;
-  /* _______ Transición 2 _______*/
-}
+   _______ Transición 2 _______
+  }
+  */
 
 .texto-secc-2 {
   border-left: 2px solid #93C01F;
   padding-left: 2em;
   color: #323437;
-  left: -200%;
+  left: -80%;
   /* _______ Transición 2 _______*/
   transition: all 0.9s 0.1s ease-in-out;
   /* _______ Transición 2 _______*/
 }
+
+.texto-secc-2-transicion {
+  left: 10%;
+  position: relative;
+  }
 
 .texto-secc-2 a {
   color: #000000;
   font-weight: 500;
 }
 
-.seccion-2 h2 {
+.titulo-texto {
   color: #93C01F;
   margin-bottom: 15px;
+  width: fit-content;
 }
-
 .seccion-2 p {
   font-weight: lighter;
   line-height: 2em;
@@ -484,7 +508,7 @@ div.botones {
   z-index: 0;
 }
 
-/*____________________________Carrousel____________________________*/
+/*______________________Carrousel_______________________*/
 .carrousel {
   width: 90%;
   max-width: 120em;
@@ -496,11 +520,10 @@ div.botones {
   position: relative;
   /*Transición*/
   transition: all 0.9s 0.1s ease-in-out;
-  left: 150%;
+  left: 100%;
 }
 
-.seccion-2:hover .carrousel {
-  /*Transición*/
+.carrousel-transicion {
   left: 0;
 }
 
@@ -573,7 +596,7 @@ div.botones {
   opacity: 1;
 }
 
-/*____________________________Lightbox____________________________*/
+/*_______________________Lightbox_______________________*/
 .lightbox {
   position: fixed;
   top: 0;
@@ -627,6 +650,16 @@ div.botones {
   display: block;
 }
 
+/*______Accesibilidad______*/
+.fondo-seccion-2-accesible { 
+  background-image: url('../img/svg/fondo-seccion-2-accesible.svg');
+}
+
+.titulo-texto-acc {
+  color: #121212;
+  border-bottom: 2px solid #93C01F;
+}
+
 @media (width <=800px) {
   .seccion-2 {
     display: flex;
@@ -642,11 +675,9 @@ div.botones {
 
   .texto-secc-2 {
     margin: 0;
-    left: -100%;
-    margin-top: em;
   }
 
-  .seccion-2:hover .texto-secc-2.espacio-izq-sec-1 {
+  .texto-secc-2-transicion {
     left: 0;
   }
 }
@@ -688,7 +719,7 @@ div.botones {
   visibility: visible;
 }
 
-.tab h3 {
+.titulo-tab {
   color: #cb6370;
 }
 
@@ -702,8 +733,15 @@ div.botones {
   height: 65vh;
   transition: all 0.9s 0.1s cubic-bezier(.68, -0.55, .27, 1.55);
   /* _______ Transición 3 _______*/
-  top: 770px;
+  top: 120%;
   /* _______ Transición 3 _______*/
+}
+
+.tabs-transicion,
+.selectores-transicion {
+  transform: translateY(-120%);
+  /* _______ Transición 3 _______*/
+  /* _______ Transformación 2 _______*/
 }
 
 .tab,
@@ -756,12 +794,7 @@ div.botones {
   z-index: 1;
 }
 
-.seccion-3:hover .tabs,
-.seccion-3:hover .selectores {
-  transform: translateY(-740px);
-  /* _______ Transición 3 _______*/
-  /* _______ Transformación 2 _______*/
-}
+
 
 .tab-texto,
 .tab-imagen {
@@ -824,7 +857,20 @@ div.botones {
     left: 0.5em;
   }
 }
+/*______Accesibilidad______*/
 
+.seccion-3-acc .titulo-tab {
+  color: #121212;
+  border-bottom: 2px solid #cb6370;
+}
+.seccion-3-acc .card-email {
+  color: #121212;
+  font-weight: bold;
+}
+
+.seccion-3-acc .boton-tab {
+  color: #121212;
+}
 
 /*______________________________Footer_____________________________*/
 .footer {
@@ -1071,6 +1117,11 @@ footer .ubicacion iframe {
   .imagen-quienes-somos {
     width: 90%;
   }
+}
+
+/*______Accesibilidad______*/
+.tooltip-acc {
+  color: #121212;
 }
 
 /*______________________________Sección 1 Contacto_____________________________*/
@@ -1439,3 +1490,4 @@ summary {
   display: flex;
   justify-content: center;
 }
+

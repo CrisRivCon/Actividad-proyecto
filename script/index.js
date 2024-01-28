@@ -74,3 +74,79 @@ cerrar.addEventListener('click', ()=>{
     activo.classList.remove('activo');
     activo.setAttribute('src', '');
 });
+
+
+// Transiciones fijas
+const seccion1 = document.querySelector('.seccion-1');
+const textoSeccion1 = document.querySelector('.texto-seccion-1');
+
+const carrousel = document.querySelector('.carrousel');
+const seccion2 = document.querySelector('.seccion-2');
+const textoSeccion2 = document.querySelector('.texto-secc-2');
+
+const seccion3 = document.querySelector('.seccion-3');
+const tabSeccion3 = document.querySelector('.tabs');
+const selectoresSeccion3 = document.querySelector('.selectores');
+
+seccion1.addEventListener('mouseenter', transicion1);
+
+function transicion1() {
+    textoSeccion1.classList.add('texto-seccion-1-transicion');
+    
+}
+
+seccion2.addEventListener('mouseenter', transicion2);
+
+function transicion2() {
+    carrousel.classList.add('carrousel-transicion');
+    textoSeccion2.classList.add('texto-secc-2-transicion');
+    
+}
+
+seccion3.addEventListener('mouseenter', transicion3);
+
+function transicion3() {
+    tabSeccion3.classList.add('tabs-transicion');
+    selectoresSeccion3.classList.add('selectores-transicion');
+    
+}
+
+// Cambio de colores
+const linkContrasteAlto = document.getElementById('tema-accesible');
+linkContrasteAlto.addEventListener('click', colorAccesible);
+const linkColorClasico = document.getElementById('tema-clasico');
+linkColorClasico.addEventListener('click', colorClasico);
+
+
+const tituloSeccion2 = document.querySelector('.texto-secc-2>h2');
+const fondoSeccion2 = document.querySelector('.fondo-seccion-2');
+const tooltip = document.querySelector('.tooltip');
+const botonesPrimarios = document.querySelectorAll('.boton-primario');
+const botonesSecundarios = document.querySelectorAll('.boton-secundario');
+
+function colorAccesible() {
+    fondoSeccion2.classList.add('fondo-seccion-2-accesible');
+    tituloSeccion2.classList.add('titulo-texto-acc');
+    tooltip.classList.add('tooltip-acc');
+    botonesPrimarios.forEach(boton => {
+        boton.classList.add('boton-primario-acc');
+    });
+    botonesSecundarios.forEach(boton => {
+        boton.classList.add('boton-secundario-acc');
+    });
+    seccion3.classList.add('seccion-3-acc');
+
+}
+
+function colorClasico() {
+    fondoSeccion2.classList.remove('fondo-seccion-2-accesible');
+    tituloSeccion2.classList.remove('titulo-texto-acc');
+    tooltip.classList.remove('tooltip-acc');
+    botonesPrimarios.forEach(boton => {
+        boton.classList.remove('boton-primario-acc');
+    });
+    botonesSecundarios.forEach(boton => {
+        boton.classList.remove('boton-secundario-acc');
+    });
+    seccion3.classList.remove('seccion-3-acc');
+}
