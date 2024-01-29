@@ -112,17 +112,32 @@ function transicion3() {
 }
 
 // Cambio de colores
+let accesible = false;
 const linkContrasteAlto = document.getElementById('tema-accesible');
-linkContrasteAlto.addEventListener('click', colorAccesible);
 const linkColorClasico = document.getElementById('tema-clasico');
-linkColorClasico.addEventListener('click', colorClasico);
-
 
 const tituloSeccion2 = document.querySelector('.texto-secc-2>h2');
 const fondoSeccion2 = document.querySelector('.fondo-seccion-2');
 const tooltip = document.querySelector('.tooltip');
 const botonesPrimarios = document.querySelectorAll('.boton-primario');
 const botonesSecundarios = document.querySelectorAll('.boton-secundario');
+
+linkColorClasico.addEventListener('click', () => {
+    accesible = false;
+    document.cookie = 'accesible = false';
+    colorClasico();
+});
+
+linkContrasteAlto.addEventListener('click', () => {
+    accesible = true;
+    document.cookie = 'accesible = true';
+    colorAccesible();
+});
+
+// Comprobar accesible
+let cuki = document.cookie;
+let esAccesible = cuki.split('=')[1];
+esAccesible == 'true' ? colorAccesible() : colorClasico();
 
 function colorAccesible() {
     fondoSeccion2.classList.add('fondo-seccion-2-accesible');
