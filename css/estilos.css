@@ -872,6 +872,10 @@ div.botones {
   color: #121212;
 }
 
+.seccion-3-acc {
+  background-image: url('../img/svg/fondo-seccion-3-negro.svg');
+}
+
 /*______________________________Footer_____________________________*/
 .footer {
   background-color: #555962;
