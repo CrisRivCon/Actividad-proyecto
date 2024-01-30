@@ -219,7 +219,7 @@ nav a {
 /*_______________________*/
 
 @media (width <=574px) {
-  nav .enlaces {
+  nav ul {
     position: absolute;
     flex-direction: column;
     background-color: #323437;
@@ -372,7 +372,7 @@ ul.breadcrumb li a:hover {
 }
 
 .texto-seccion-1-transicion {
-  left: 0;
+  left: 1em;
   /* _______ Transición 1 _______*/
 }
 
@@ -739,7 +739,7 @@ div.botones {
 
 .tabs-transicion,
 .selectores-transicion {
-  transform: translateY(-120%);
+  transform: translateY(-134%);
   /* _______ Transición 3 _______*/
   /* _______ Transformación 2 _______*/
 }
