@@ -8,8 +8,6 @@ botonMenu.addEventListener('click', mostrarMenu);
 function mostrarMenu() {
     menu.classList.toggle('nav-visible');
 };
-console.log(URL);
-console.log(document.URL.match(new RegExp('/.*$')));
 
 // Cambio de colores
 let accesible = false;
@@ -17,6 +15,7 @@ const linkContrasteAlto = document.getElementById('tema-accesible');
 const linkColorClasico = document.getElementById('tema-clasico');
 
 const cuerpo = document.getElementById('body');
+console.log(cuerpo);
 
 const tituloSeccion2 = document.querySelector('.texto-secc-2>h2');
 const fondoSeccion2 = document.querySelector('.fondo-seccion-2');

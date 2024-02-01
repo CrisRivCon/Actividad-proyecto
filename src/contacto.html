@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Asociación Chipi Gato Feliz</title>
 </head>
-<body>
+<body id="body">
     <header>
         <nav>
             <div>
@@ -21,29 +21,30 @@
                     alt="logo de la Asociación, la cara de un gato en negro"></a>
             </div>
             <div>
-                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg">
                 <ul class="enlaces" id="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="quienes-somos.html">Quienes somos</a></li>
                     <li class="select"><a href="contacto.html">Contacto</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li>
+                        <div class="temas temas-menu">
+                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
+                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
+                        </div>
+                    </li>
                     <li class="boton-colabora-menu">
-                        <a href="../index.html#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
+                        <a href="../seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
                 </ul>
+                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg">
             </div>
-            <button class="nav-colabora">
-                <a href="../index.html#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
-            </button>
         </nav>
     </header>
     <main>
-        <div id="seccion-1" class="seccion-1 contacto">
-           <div class="contenedor-fondo">
-            </div> 
-            <div class="contenido">
+        <div id="seccion-1" class="seccion-1 contacto contenedor-fondo">
+            <div class="contactanos">
                 <div class="ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25581.115021605146!2d-6.451361439883361!3d36.731221275046124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0e75a23be20167%3A0x166c05cf50644a01!2s11550%20Chipiona%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701021126863!5m2!1ses!2ses" width="576" height="424" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25581.115021605146!2d-6.451361439883361!3d36.731221275046124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0e75a23be20167%3A0x166c05cf50644a01!2s11550%20Chipiona%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701021126863!5m2!1ses!2ses" height="424" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
                     <a href="https://maps.app.goo.gl/jeHxYJJrsPhcJytH8"><div class="ubicacion-blanco"></div> Chipiona, Cádiz</a>
                 </div>

@@ -215,13 +215,10 @@ nav a {
 .temas a {
   cursor: pointer;
 }
-.boton-colabora-menu,
-.temas-menu {
-  display: none;
-}
+
 /*_______________________*/
 
-@media (width <=574px) {
+@media (width <=742px) {
   nav ul {
     position: absolute;
     flex-direction: column;
@@ -258,26 +255,18 @@ nav a {
     display: block;
   }
 
-  .boton-colabora-menu, 
-  .temas-menu {
-    display: flex;
-  }
-
-
-  .select {
+   .select {
     text-decoration: none;
   }
 
-  .nav-colabora,
-  .temas-oculto {
-    display: none;
-  }
 }
 
-@media (864px <=width <=1000px) {
-  nav {
-    min-width: 572px;
+@media (742px <=width <=820px) {
+  nav .enlaces {
+    gap: 1em;
   }
+}
+  @media (820px <=width <=1000px) {
 
   nav .enlaces {
     gap: 2em;
@@ -1137,19 +1126,32 @@ footer .ubicacion iframe {
 
 /*______________________________Sección 1 Contacto_____________________________*/
 
-.contacto .contenedor-fondo {
+.contacto.contenedor-fondo {
   background-image: url('../img/fondo-2.png');
+  position: inherit;
+}
+
+.contactanos {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding-top: 5em;
 }
 
 .contacto .ubicacion {
-  margin-left: 100px;
-  text-align: center;
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-right: 2em;
+  max-width: 550px;
+
 }
 
-.contenido .contacto h3,
-.contacto a {
-  color: #FFFFFF;
+.contactanos .ubicacion a{
+  color: #F7F7F7;
   margin: 10px 0;
 }
 
@@ -1158,11 +1160,6 @@ footer .ubicacion iframe {
   justify-content: space-around;
   width: 125px;
   align-self: center;
-}
-
-.texto-contacto {
-  grid-row-start: 2;
-  grid-column-start: 1;
 }
 
 .texto-contacto h1 {
@@ -1183,13 +1180,13 @@ footer .ubicacion iframe {
 .contacto form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  padding-top: 1em;
 }
 
 .contacto .input,
 .contacto label,
 .texto-contacto p {
-  margin: 8px 0;
+  margin: 0.5em 0;
 }
 
 .contacto input {
@@ -1198,9 +1195,11 @@ footer .ubicacion iframe {
   transition: all .3s linear;
   border-radius: 0;
   box-shadow: none;
-  padding-bottom: 5px;
+  padding-bottom: 0.5em;
   outline: none;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 3px 3px 3px #555962;
 }
 
 .linea-input {
@@ -1230,12 +1229,46 @@ textarea:focus-visible {
 
 textarea {
   color: #555962;
-  height: 100px;
+  height: 8em;
+  box-shadow: 3px 3px 3px #555962;
+
 }
 
 .contacto button {
-  margin-top: 30px;
-  margin-left: 72px;
+  margin: 1.5em 0;
+  align-self: center;
+} 
+
+@media (width <=800px) {
+  .contactanos {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 10em;
+    gap: 1em;
+  }
+  .texto-contacto {
+    padding-left: 0;
+  }
+  .contacto .ubicacion {
+    width: 90%;
+    max-width: 550px;
+    padding-right: 0;
+  }
+  .contacto.contenedor-fondo {
+    background-image: url('../img/fondo-2.png');
+    position: inherit;
+  }
+  .contactanos .ubicacion-blanco {
+    background-image: url('../img/icon/ubicacion-negro.png');
+  }
+}
+
+/*Accesibilidad*/
+.accesible .texto-contacto h1 {
+  color: #121212;
+}
+.accesible .contactanos .ubicacion-blanco {
+  background-image: url('../img/icon/ubicacion-negro.png');
 }
 
 /*______________________________ Blog _____________________________*/
