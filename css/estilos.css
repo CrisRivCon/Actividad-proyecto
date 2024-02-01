@@ -131,10 +131,10 @@ span.boton-terciario {
 }
 
 /*______Accesibilidad______*/
-.boton-primario-acc {
+.accesible .boton-primario {
   color: #121212;
 }
-.boton-secundario-acc {
+.accesible .boton-secundario {
   color: #121212;
 }
 
@@ -187,7 +187,9 @@ nav .enlaces {
   justify-content: space-around;
   list-style: none;
 }
-
+nav .enlaces li:nth-child(2){
+  min-width: 100px;
+}
 nav a {
   color: #000000;
   font-weight: 500;
@@ -202,9 +204,6 @@ nav a {
   cursor: pointer;
 }
 
-.boton-colabora-menu {
-  display: none;
-}
 
 /*_____Accesibilidad_____*/
 .temas {
@@ -216,6 +215,10 @@ nav a {
 .temas a {
   cursor: pointer;
 }
+.boton-colabora-menu,
+.temas-menu {
+  display: none;
+}
 /*_______________________*/
 
 @media (width <=574px) {
@@ -226,6 +229,7 @@ nav a {
     opacity: 0;
     visibility: hidden;
     right: 0;
+    top: 30px;
     margin-top: 1em;
     border-radius: 10px;
   }
@@ -254,30 +258,33 @@ nav a {
     display: block;
   }
 
-  .boton-colabora-menu {
-    display: block;
+  .boton-colabora-menu, 
+  .temas-menu {
+    display: flex;
   }
+
 
   .select {
     text-decoration: none;
   }
 
-  .nav-colabora {
+  .nav-colabora,
+  .temas-oculto {
     display: none;
   }
 }
 
-@media (574px <=width <=800px) {
+@media (864px <=width <=1000px) {
   nav {
     min-width: 572px;
   }
 
   nav .enlaces {
-    gap: 1em;
+    gap: 2em;
   }
 }
 
-@media (width > 800px) {
+@media (width > 1000px) {
   nav .enlaces {
     gap: 3em;
   }
@@ -651,11 +658,11 @@ div.botones {
 }
 
 /*______Accesibilidad______*/
-.fondo-seccion-2-accesible { 
+.accesible .fondo-seccion-2 { 
   background-image: url('../img/svg/fondo-seccion-2-accesible.svg');
 }
 
-.titulo-texto-acc {
+.accesible .titulo-texto {
   color: #121212;
   border-bottom: 2px solid #93C01F;
 }
@@ -859,20 +866,20 @@ div.botones {
 }
 /*______Accesibilidad______*/
 
-.seccion-3-acc .titulo-tab {
+.accesible .titulo-tab {
   color: #121212;
   border-bottom: 2px solid #cb6370;
 }
-.seccion-3-acc .card-email {
+.accesible .card-email {
   color: #121212;
   font-weight: bold;
 }
 
-.seccion-3-acc .boton-tab {
+.accesible .boton-tab {
   color: #121212;
 }
 
-.seccion-3-acc {
+.accesible .seccion-3 {
   background-image: url('../img/svg/fondo-seccion-3-negro.svg');
 }
 
@@ -1124,7 +1131,7 @@ footer .ubicacion iframe {
 }
 
 /*______Accesibilidad______*/
-.tooltip-acc {
+.accesible .tooltip {
   color: #121212;
 }
 

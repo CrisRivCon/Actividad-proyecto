@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Asociación Chipi Gato Feliz</title>
 </head>
-<body>
+<body id="body">
     <header>
         <nav>
             <div>
@@ -20,12 +20,17 @@
                     alt="logo de la Asociación, la cara de un gato en negro"></a>
             </div>
             <div class="enlaces">
-                <img class="icono-menu" id="abrir-menu" src="./img/icon/menu-hamburguesa.svg">
                 <ul class="enlaces" id="menu">
                     <li class="select"><a href="#">Inicio</a></li>
                     <li><a href="src/quienes-somos.html">Quienes somos</a></li>
                     <li><a href="src/contacto.html">Contacto</a></li>
                     <li><a href="src/blog.html">Blog</a></li>
+                    <li>
+                        <div class="temas temas-menu">
+                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
+                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
+                        </div>
+                    </li>
                     <li class="boton-colabora-menu">
                         <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
@@ -33,10 +38,11 @@
                 <button class="nav-colabora">
                     <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                 </button>
-                <div class="temas">
+                <div class="temas temas-oculto">
                     <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
                     <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
                 </div>
+                <img class="icono-menu" id="abrir-menu" src="./img/icon/menu-hamburguesa.svg">
             </div>
         </nav>
     </header>
