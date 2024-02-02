@@ -14,9 +14,11 @@ body {
 .boton-sin-sombra {
   all: unset;
 }
+
 button {
   all: unset;
 }
+
 button:hover {
   cursor: pointer;
 }
@@ -134,6 +136,7 @@ span.boton-terciario {
 .accesible .boton-primario {
   color: #121212;
 }
+
 .accesible .boton-secundario {
   color: #121212;
 }
@@ -187,9 +190,11 @@ nav .enlaces {
   justify-content: space-around;
   list-style: none;
 }
-nav .enlaces li:nth-child(2){
+
+nav .enlaces li:nth-child(2) {
   min-width: 100px;
 }
+
 nav a {
   color: #121212;
   font-weight: 500;
@@ -255,7 +260,7 @@ nav a {
     display: block;
   }
 
-   .select {
+  .select {
     text-decoration: none;
   }
 
@@ -266,7 +271,8 @@ nav a {
     gap: 1em;
   }
 }
-  @media (820px <=width <=1000px) {
+
+@media (820px <=width <=1000px) {
 
   nav .enlaces {
     gap: 2em;
@@ -468,7 +474,7 @@ div.botones {
 .texto-secc-2-transicion {
   left: 10%;
   position: relative;
-  }
+}
 
 .texto-secc-2 a {
   color: #121212;
@@ -480,6 +486,7 @@ div.botones {
   margin-bottom: 15px;
   width: fit-content;
 }
+
 .seccion-2 p {
   font-weight: lighter;
   line-height: 2em;
@@ -647,7 +654,7 @@ div.botones {
 }
 
 /*______Accesibilidad______*/
-.accesible .fondo-seccion-2 { 
+.accesible .fondo-seccion-2 {
   background-image: url('../img/svg/fondo-seccion-2-accesible.svg');
 }
 
@@ -853,12 +860,14 @@ div.botones {
     left: 0.5em;
   }
 }
+
 /*______Accesibilidad______*/
 
 .accesible .titulo-tab {
   color: #121212;
   border-bottom: 2px solid #cb6370;
 }
+
 .accesible .card-email {
   color: #121212;
   font-weight: bold;
@@ -1006,20 +1015,28 @@ footer .ubicacion iframe {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 2em;
+  gap: 3em;
 }
 
-.imagen-quienes-somos img {
-  width: 90%;
-  height: 92%;
-}
 
 .quienes-somos .imagenes img,
 .contacto iframe {
   border: 20px solid white;
   border-radius: 40px;
+}
+
+
+.texto-quienes-somos {
+  /* El texto de la derecha*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1.5em;
+  background-color: #F7F7F7;
+  border-radius: 2em;
+  padding: 1em;
 }
 
 .texto-quienes-somos h1,
@@ -1028,15 +1045,10 @@ footer .ubicacion iframe {
   color: #121212;
 }
 
-.texto-quienes-somos {
-  /* El texto de la derecha*/
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 1.5em;
-  background-color: #F7F7F7;
-  border-radius: 2em;
-  padding: 1em;
+.texto-quienes-somos p {
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  color: #323437;
 }
 
 .imagen-quienes-somos {
@@ -1044,10 +1056,14 @@ footer .ubicacion iframe {
   max-width: 492px;
 }
 
-.texto-quienes-somos p {
-  font-weight: lighter;
-  letter-spacing: 0.05em;
-  color: #323437;
+.imagen-quienes-somos img {
+  width: 90%;
+  height: 92%;
+}
+
+.imagen-quienes-somos picture {
+  display: flex;
+  justify-content: end;
 }
 
 .quienes-somos .redes-sociales {
@@ -1080,10 +1096,12 @@ footer .ubicacion iframe {
   visibility: visible;
   opacity: 1;
 }
+
 /*______Accesibilidad______*/
 .accesible .tooltip {
   color: #121212;
 }
+
 .accesible .contenedor-fondo {
   background-image: url('../img/svg/fondo-quienes-somos-negro.svg');
 }
@@ -1092,7 +1110,7 @@ footer .ubicacion iframe {
 
   .quienes-somos,
   .accesible .contenedor-fondo {
-    height: 1800px;
+    height: 1500px;
   }
 
   .texto-quienes-somos {
@@ -1109,19 +1127,21 @@ footer .ubicacion iframe {
   .quienes-somos .contenido {
     display: flex;
     flex-direction: column;
-    gap: 5em;
-    padding: 10em 1em;
+    gap: 0em;
+    justify-content: space-evenly;
   }
 
   .imagen-quienes-somos.imagenes img {
     width: 100%;
     height: auto;
-    box-shadow: 3px 3px 3px #555962;
 
   }
 
   .imagen-quienes-somos {
-    width: 90%;
+    width: 80%;
+  }
+  .accesible .contenedor-fondo {
+    background-image: url('../img/svg/fondo-quienes-somos-negro-900.svg');
   }
 }
 
@@ -1129,7 +1149,7 @@ footer .ubicacion iframe {
 /*______________________________Sección 1 Contacto_____________________________*/
 
 .contacto.contenedor-fondo {
-  background-image: url('../img/fondo-2.png');
+  background-image: url('../img/svg/fondo-contacto-verde.svg');
   position: inherit;
 }
 
@@ -1152,7 +1172,7 @@ footer .ubicacion iframe {
 
 }
 
-.contactanos .ubicacion a{
+.contactanos .ubicacion a {
   color: #F7F7F7;
   margin: 10px 0;
 }
@@ -1183,12 +1203,7 @@ footer .ubicacion iframe {
   display: flex;
   flex-direction: column;
   padding-top: 1em;
-}
-
-.contacto .input,
-.contacto label,
-.texto-contacto p {
-  margin: 0.5em 0;
+  gap: .6em;
 }
 
 .contacto input {
@@ -1201,11 +1216,11 @@ footer .ubicacion iframe {
   outline: none;
   width: 100%;
   max-width: 300px;
-  box-shadow: 3px 3px 3px #555962;
+  padding: .5em;
 }
 
 .linea-input {
-  border-bottom: 2px solid #93C01F;
+  border-bottom: 3px solid #93C01F;
   width: 0;
   transition: 0.2s all ease;
 }
@@ -1226,43 +1241,19 @@ label {
 
 textarea:focus-visible {
   outline: none;
-  border: 2px solid #93C01F;
+  border: 3px solid #93C01F;
 }
 
 textarea {
   color: #555962;
   height: 8em;
-  box-shadow: 3px 3px 3px #555962;
+  padding: 0.5em;
 
 }
 
 .contacto button {
-  margin: 1.5em 0;
   align-self: center;
-} 
-
-@media (width <=800px) {
-  .contactanos {
-    flex-direction: column-reverse;
-    height: auto;
-    padding-top: 10em;
-    gap: 1em;
-  }
-  .texto-contacto {
-    padding-left: 0;
-  }
-  .contacto .ubicacion {
-    width: 90%;
-    max-width: 550px;
-    padding-right: 0;
-  }
-  .contacto.contenedor-fondo {
-    background-image: url('../img/fondo-2.png');
-    position: inherit;
-  }
-  .contactanos .ubicacion-blanco {
-    background-image: url('../img/icon/ubicacion-negro.png');
-  }
+  margin-top: 1em;
 }
 
 /*Accesibilidad*/
@@ -1270,9 +1261,69 @@ textarea {
 .accesible .contactanos .ubicacion a {
   color: #121212;
 }
+
 .accesible .contactanos .ubicacion-blanco {
   background-image: url('../img/icon/ubicacion-negro.png');
 }
+
+.accesible .contacto.contenedor-fondo {
+  background-image: url('../img/svg/fondo-contacto-negro.svg');
+}
+.accesible .contactanos .ubicacion a {
+  color: #F7F7F7;
+}
+.accesible .contactanos .ubicacion-blanco {
+  background-image: url('../img/icon/ubicacion.png');
+}
+
+@media (width <=900px) {
+  .contactanos {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 7em;
+    gap: 12em;
+  }
+
+  .texto-contacto {
+    padding-left: 0;
+    gap: .5em;
+  }
+
+  .contacto .ubicacion {
+    width: 90%;
+    max-width: 550px;
+    padding-right: 0;
+    gap: 2em;
+  }
+
+  .contacto.contenedor-fondo,
+  .accesible .contacto.contenedor-fondo {
+    background-image: url('../img/svg/fondo-quienes-somos-verde-900.svg');
+    height: 1500px;
+  }
+  .accesible .contacto.contenedor-fondo {
+    background-image: url('../img/svg/fondo-quienes-somos-negro-900.svg');
+  }
+  .contactanos .ubicacion-blanco {
+    background-image: url('../img/icon/ubicacion-negro.png');
+  }
+
+
+  .contactanos .ubicacion a {
+    color: #121212;
+  }
+
+  .contacto input,
+  .contacto textarea {
+    box-shadow: 3px 3px 3px 3px #555962;
+
+  }
+
+  .contacto input:focus {
+    border-bottom: 3px solid #93C01F;
+  }
+}
+
 
 /*______________________________ Blog _____________________________*/
 
@@ -1389,6 +1440,7 @@ textarea {
 .texto-largo {
   color: #323437;
 }
+
 /*Accesibilidad*/
 .accesible .leer-mas {
   color: #121212;
@@ -1407,6 +1459,7 @@ textarea {
     inset -2px -2px 3px #93C01F;
   background-color: #F7F7F7;
 }
+
 /*______________________________ Artículo Blog _____________________________*/
 
 
@@ -1554,4 +1607,3 @@ summary {
   display: flex;
   justify-content: center;
 }
-
