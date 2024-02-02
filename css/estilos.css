@@ -1000,8 +1000,7 @@ footer .ubicacion iframe {
 }
 
 .quienes-somos .contenedor-fondo {
-  transform: rotate(180deg);
-  background-image: url('../img/fondo-2.png');
+  background-image: url('../img/svg/fondo-quienes-somos-verde.svg');
 }
 
 .contenido {
@@ -1122,6 +1121,9 @@ footer .ubicacion iframe {
 /*______Accesibilidad______*/
 .accesible .tooltip {
   color: #121212;
+}
+.accesible .quienes-somos .contenedor-fondo {
+  background-image: url('../img/svg/fondo-quienes-somos-negro.svg');
 }
 
 /*______________________________Sección 1 Contacto_____________________________*/
