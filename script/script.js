@@ -32,7 +32,7 @@ linkContrasteAlto.addEventListener('click', () => {
 // Comprobar accesible
 let cuki = document.cookie;
 console.log(cuki);
-let esAccesible = cuki.split('=')[1];
+let esAccesible = getValueCookie('accesible');
 esAccesible == 'true' ? colorAccesible() : colorClasico();
 
 function colorAccesible() {
@@ -53,4 +53,17 @@ function setCookie(nombre, valor, expires, path = '/') {
 function borrarCuki(nombre) {
     setCookie(nombre, '', -10);
 
+}
+
+/**
+ * Devulve el valor de una cookie cuyo nombre 
+ * se pasa por parámetro
+ * @param {string} nombre 
+ * @returns {string}
+ */
+function getValueCookie(nombre) {
+    const regex = new RegExp(`${nombre}=.*;?`, 'ig');
+    let match = document.cookie.split(';').find((ele) => ele.match(regex));
+    let valor = decodeURIComponent(match).split('=');
+    return valor[1];
 }
