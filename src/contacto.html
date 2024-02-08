@@ -56,18 +56,33 @@
                         cualquiera de nuestras redes sociales.
                     </p>
                         <form>
-                            <label for="nombre">Nombre</label>
+                            <label for="nombre" pattern="">Nombre</label>
                             <div class="input">
-                                <input type="text" id="nombre" placeholder="Introduce tu nombre">
+                                <input type="text" id="nombre" 
+                                placeholder="Introduce tu nombre"
+                                pattern="^(((\w|[À-ÿ])+)\s((\w|[À-ÿ])+))(\s((\w|[À-ÿ])+)){0,2}$" 
+                                title="Introduzca nombre y apellidos. Max: 2 nombres y 2 apellidos." 
+                                required>
                                 <div class="linea-input"></div>
+                                <img src="../img/icon/valido.png" 
+                                alt="indica que el campo del formulario es vádido o inválido" 
+                                class="input-icon">
                             </div>
                             <label for="email">Email</label>
                             <div class="input">
-                                <input type="email" id="email" placeholder="Introduce tu email">
+                                <input type="email" id="email" 
+                                placeholder="Introduce tu email"
+                                pattern="^((.+)@(.+)\.[a-z]+)$"
+                                title="xxxx@xxx.xxx"
+                                required
+                                >
                                 <div class="linea-input"></div>
+                                <img src="../img/icon/valido.png" 
+                                alt="indica que el campo del formulario es vádido o inválido" 
+                                class="input-icon">
                             </div>
                             <label for="motivo">Motivo</label>
-                            <textarea name="motivo" id="motivo" cols="30" rows="10">Introduce el motivo</textarea>
+                            <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Introduce el motivo"></textarea>
                             <button class="boton-sin-sombra boton-primario" type="submit">ENVIAR</button>
                         </form>
                 </div>
@@ -109,5 +124,6 @@
         </div>     
     </footer>
     <script src="../script/script.js"></script>
+    <script src="../script/formulario.js"></script>
 </body>
 </html>

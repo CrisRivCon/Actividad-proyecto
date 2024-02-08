@@ -1235,6 +1235,20 @@ textarea {
   border-bottom: 0;
 }
 
+
+.input-icon {
+  display: none;
+  position: relative;
+  width: 15px;
+  left: 270px;
+  transform: translateY(-185%);
+}
+
+.icono-visible {
+  display: block;
+}
+
+
 label {
   font-weight: 500;
 }
@@ -1476,6 +1490,10 @@ textarea {
   color: #93C01F;
   text-shadow: -1px -1px 0 #323437;
   transition: all 250ms linear;
+}
+.accesible .leer-mas:hover>a{
+  color: #93C01F;
+  
 }
 
 /*______________________________ Artículo Blog _____________________________*/
