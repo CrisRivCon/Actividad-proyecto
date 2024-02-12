@@ -1759,3 +1759,8 @@ summary {
   visibility: visible;
   opacity: 1;
 }
+
+/*Accesibilidad*/
+.accesible .sonidos p {
+  color:#121212;
+}
