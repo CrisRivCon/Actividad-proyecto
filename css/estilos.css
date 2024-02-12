@@ -469,7 +469,7 @@ div.botones {
 
 .texto-secc-2 {
   border-left: 2px solid #93C01F;
-  padding-left: 2em;
+  padding: 2em;
   color: #323437;
   left: -80%;
   /* _______ Transición 2 _______*/
@@ -479,6 +479,7 @@ div.botones {
   max-width: 40vw;
   max-width: 458px;
   width: 100vw;
+  border-radius: 30px;
 }
 
 .texto-secc-2-transicion {
@@ -677,7 +678,7 @@ div.botones {
   .seccion-2 {
     display: flex;
     flex-direction: column;
-    gap: 10em;
+    gap: 5em;
     padding: 10em 2em;
     min-height: 1400px;
   }
@@ -690,6 +691,8 @@ div.botones {
     margin: 0;
     max-width: none;
     width: auto;
+    box-shadow: 3px 3px 3px 3px #555962;
+
   }
 
   .texto-secc-2-transicion {
@@ -1177,7 +1180,11 @@ footer .ubicacion iframe {
   border: 0.3em solid #a1c644;
 }
 
-
+.final-tabla {
+  width: 100vw;
+  background-color: #F7F7F7;
+  height: 148px;
+}
 
 @media (width <=900px) {
 
@@ -1228,7 +1235,7 @@ footer .ubicacion iframe {
 .contacto.contenedor-fondo {
   background-image: url('../img/svg/fondo-contacto-verde.svg');
   position: inherit;
-  height: 120vh;
+  height: 110vh;
 }
 
 .contactanos {
@@ -1373,7 +1380,7 @@ textarea {
     flex-direction: column-reverse;
     height: auto;
     padding-top: 7em;
-    gap: 12em;
+    gap: 5em;
   }
 
   .texto-contacto {
@@ -1729,4 +1736,26 @@ summary {
 .articulo-3 .cuerpo .video {
   display: flex;
   justify-content: center;
+}
+
+/* Tooltip */
+.tooltip-sonidos1 {
+  bottom: 555px;
+  left: 411px;
+  border: 1px solid #93C01F;
+}
+
+.ronroneo:hover+.tooltip-sonidos1 {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-sonidos2 {
+  bottom: 555px;
+  left: 711px;
+  border: 1px solid #93C01F;
+}
+
+.maullido:hover+.tooltip-sonidos2 {
+  visibility: visible;
+  opacity: 1;
 }
