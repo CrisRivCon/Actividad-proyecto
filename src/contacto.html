@@ -24,24 +24,28 @@
                 <ul class="enlaces" id="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="quienes-somos.html">Quienes somos</a></li>
-                    <li class="select"><a href="contacto.html">Contacto</a></li>
+                    <li class="select"><a href="contacto.html" aria-current="page">Contacto</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li>
                         <div class="temas temas-menu">
                             <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
-                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
+                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" 
+                                title="Cambiar a combinación de colores de alto contraste"
+                                alt="Cambiar a combinación de colores de alto contraste"></a>
                         </div>
                     </li>
                     <li class="boton-colabora-menu">
                         <a href="../seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
                 </ul>
-                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg">
+                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg" 
+                    title="desplegar menú"
+                    alt="desplegar menú">
             </div>
         </nav>
     </header>
     <main>
-        <div id="seccion-1" class="seccion-1 contacto contenedor-fondo">
+        <section id="seccion-1" class="seccion-1 contacto contenedor-fondo">
             <div class="contactanos">
                 <div class="ubicacion">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25581.115021605146!2d-6.451361439883361!3d36.731221275046124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0e75a23be20167%3A0x166c05cf50644a01!2s11550%20Chipiona%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701021126863!5m2!1ses!2ses" height="424" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -56,23 +60,46 @@
                         cualquiera de nuestras redes sociales.
                     </p>
                         <form>
-                            <label for="nombre">Nombre</label>
+                            <label for="nombre" pattern="">Nombre*</label>
                             <div class="input">
-                                <input type="text" id="nombre" placeholder="Introduce tu nombre">
+                                <input type="text" id="nombre" 
+                                placeholder="Introduce tu nombre"
+                                pattern="^(((\w|[À-ÿ])+)\s((\w|[À-ÿ])+))(\s((\w|[À-ÿ])+)){0,2}$" 
+                                title="Introduzca nombre y apellidos. Max: 2 nombres y 2 apellidos." 
+                                aria-required="true"
+                                required>
                                 <div class="linea-input"></div>
+                                <img src="../img/icon/valido.png" 
+                                alt="indica que el campo del formulario es vádido o inválido" 
+                                class="input-icon">
                             </div>
-                            <label for="email">Email</label>
+                            <label for="email">Email*</label>
                             <div class="input">
-                                <input type="email" id="email" placeholder="Introduce tu email">
+                                <input type="email" id="email" 
+                                placeholder="Introduce tu email"
+                                pattern="^((.+)@(.+)\.[a-z]+)$"
+                                title="Introduzca un email de contacto, formato válido xxxx@xxx.xxx"
+                                inputmode="email"
+                                aria-required="true"
+                                required
+                                >
                                 <div class="linea-input"></div>
+                                <img src="../img/icon/valido.png" 
+                                alt="indica que el campo del formulario es vádido o inválido" 
+                                class="input-icon">
                             </div>
-                            <label for="motivo">Motivo</label>
-                            <textarea name="motivo" id="motivo" cols="30" rows="10">Introduce el motivo</textarea>
+                            <label for="motivo">Motivo*</label>
+                            <textarea name="motivo" id="motivo" 
+                            cols="30" rows="10" 
+                            placeholder="Introduce el motivo" 
+                            title="Introduzca el motivo de su email."
+                            aria-required="true"
+                            required></textarea>
                             <button class="boton-sin-sombra boton-primario" type="submit">ENVIAR</button>
                         </form>
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
     <footer class="footer fondo-footer">
@@ -100,14 +127,15 @@
                 <hr>
                 <a href="">Proyecto Gestión Chipi Gato Feliz © 2023 by Cristina Rivera is licensed under CC BY-NC-SA 4.0.</a>
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
                 </a>
             </div>
         </div>     
     </footer>
     <script src="../script/script.js"></script>
+    <script src="../script/formulario.js"></script>
 </body>
 </html>

@@ -17,37 +17,51 @@
                 <a href="#">
                     <img class="logo" id="logo" 
                     src="img/logo/chipi-gato-feliz-logo-840x779.svg" 
+                    title="Logo de la Asociación"
                     alt="logo de la Asociación, la cara de un gato en negro"></a>
             </div>
             <div class="enlaces">
                 <ul class="enlaces" id="menu">
-                    <li class="select"><a href="#">Inicio</a></li>
+                    <li class="select">
+                        <a  href="#" 
+                            aria-current="page">
+                            Inicio
+                        </a>
+                    </li>
                     <li><a href="src/quienes-somos.html">Quienes somos</a></li>
                     <li><a href="src/contacto.html">Contacto</a></li>
                     <li><a href="src/blog.html">Blog</a></li>
                     <li>
                         <div class="temas temas-menu">
-                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
-                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
+                            <a id="tema-clasico" 
+                            >
+                                <img 
+                                src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" 
+                                title="Cambiar a combinación de colores clásico"
+                                alt="Cambiar a combinación de colores clásico">
+                            </a>
+                            <a id="tema-accesible" >
+                                <img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" 
+                                title="Cambiar a combinación de colores de alto contraste"
+                                alt="Cambiar a combinación de colores de alto contraste">
+                            </a>
                         </div>
                     </li>
                     <li class="boton-colabora-menu">
                         <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
                 </ul>
-                <!-- <button class="nav-colabora">
-                    <a href="#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
-                </button>
-                <div class="temas temas-oculto">
-                    <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
-                    <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="/img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
-                </div> -->
-                <img class="icono-menu" id="abrir-menu" src="./img/icon/menu-hamburguesa.svg">
+                <img 
+                    class="icono-menu" 
+                    id="abrir-menu" 
+                    src="./img/icon/menu-hamburguesa.svg" 
+                    title="desplegar menú"
+                    alt="desplegar menú">
             </div>
         </nav>
     </header>
     <main>
-        <div id="seccion-1" class="seccion-1">
+        <section id="seccion-1" class="seccion-1">
             <div class="fondo-seccion-1"></div>
             <div class="cubre-fotos"></div>
             <div class="texto-seccion-1">
@@ -60,7 +74,7 @@
                     <a href="#seccion-3-colabora"><span class="boton-secundario">COLABORA</span></a>
                 </div>
             </div>
-        </div>
+        </section>
         <section id="seccion-2-adopta" class="seccion-2 fondo-seccion-2">
             <div class="texto-secc-2 espacio-izq-sec-1">
                 <h2 class="titulo-texto">¿Quieres adoptar?</h2>
@@ -82,8 +96,15 @@
             </div>
             <div class="imagenes carrousel">
                 <div class="grande">
-                    <img src="img/gato-rubio-durmiendo.jpg"  class="elementos" title="Tarzán, gato rescatado que se adoptó en junio de 2023" alt="gatito rubio durmiendo boca arriba ">
-                    <video src="img/video-gatos-durmiendo.mp4" class="elementos" autoplay muted loop></video>
+                    <img src="img/gato-rubio-durmiendo.jpg"  
+                        class="elementos" 
+                        title="Tarzán, gato rescatado que se adoptó en junio de 2023" 
+                        alt="gatito rubio durmiendo boca arriba">
+                    <video src="img/video-gatos-durmiendo.mp4" 
+                        class="elementos" 
+                        autoplay muted loop 
+                        title="Tarzán y Aladín, dos gatos rubios rescatados durmiendo en una manta de pelos">
+                    </video>
                     <img src="img/gatito-rubio-de-cerca.jpg"  class="elementos" title="Tarzán, gato rescatado que se adoptó en junio de 2023" alt="gato rubio de cerca">
                     <img src="img/gato-acostado-en-cama-celeste.jpg"  class="elementos" title="Aladín, gato rescatado que se adoptó en junio de 2023" alt="gato acostado en cama celeste">
                 </div>
@@ -96,8 +117,8 @@
             </div>
             <div class="lightbox">
                 <button class="cerrar boton-primario">X</button>
-                <img src="" class="img-grande" alt="imagen">
-                <video src="" class="video-grande" autoplay loop muted>
+                <img src="/img/icon/gato(3).png" class="img-grande" alt="">
+                <video src="/img/icon/gato(3).png" class="video-grande" controls loop muted></video>
             </div>
         </section>
         <section id="seccion-3-colabora" class="seccion-3 fondo-seccion-3">
@@ -122,7 +143,7 @@
                         <a href="#"><span class="boton-primario">IMPRESO</span></a>
                     </div>
                     <div class="tab-imagen">
-                        <img src="img/refugio-500.jpg" alt="foto de los gatos del refugio">
+                        <img src="img/refugio-500.jpg" title="Varios de los gatos del refugio" alt="varios de los gatos del refugio">
                     </div>
                 </div>
                 <div class="tab" id="micro">
@@ -139,7 +160,7 @@
                         <a href="www.teaming.net/refugiochipigatofeliz"><span class="boton-primario">TEAMING</span></a>
                     </div>
                     <div class="tab-imagen">
-                        <img src="img/refugio-4-500.jpg" alt="foto de los gatos del refugio">
+                        <img src="img/refugio-4-500.jpg" title="Varios de los gatos del refugio" alt="varios de los gatos del refugio">
                     </div>
                 </div>
 
@@ -157,7 +178,7 @@
                         <a href="#"><span class="boton-primario">DONA</span></a>
                     </div>
                     <div class="tab-imagen">
-                        <img src="img/refugio-2-500.jpg" alt="foto de los gatos del refugio">
+                        <img src="img/refugio-2-500.jpg" title="Varios de los gatos del refugio" alt="varios de los gatos del refugio">
                     </div>
                 </div>
                 <div class="tab" id="apadrina">
@@ -176,7 +197,7 @@
                         <a href="#"><span class="boton-primario">FORMULARIO</span></a>
                     </div>
                     <div class="tab-imagen">
-                        <img src="img/refugio-3-500.jpg" alt="foto de los gatos del refugio">
+                        <img src="img/refugio-3-500.jpg" title="Varios de los gatos del refugio" alt="varios de los gatos del refugio">
                     </div>
                 </div>
             </div>
@@ -207,10 +228,10 @@
                 <hr>
                 <a href="">Proyecto Gestión Chipi Gato Feliz © 2023 by Cristina Rivera is licensed under CC BY-NC-SA 4.0.</a>
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
                 </a>
             </div>
         </div>     

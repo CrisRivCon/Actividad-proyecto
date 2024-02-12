@@ -10,38 +10,45 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Beneficios de adoptar un gato</title>
 </head>
-<body>
+<body id="body">
     <header>
         <nav class="nav-articulos">
             <div>
                 <a href="../index.html">
-                    <img class="logo" id="logo"
-                     src="../img/logo/chipi-gato-feliz-logo-840x779.svg" 
-                     title="Logo de Chipi Gato Feliz" 
-                     alt="logo de la Asociación, la cara de un gato en negro"></a>
+                    <img class="logo" id="logo" 
+                    src="../img/logo/chipi-gato-feliz-logo-840x779.svg"
+                    title="Logo de Chipi Gato Feliz" 
+                    alt="logo de la Asociación, la cara de un gato en negro"></a>
             </div>
             <div>
-                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg">
                 <ul class="enlaces" id="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="quienes-somos.html">Quienes somos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li class="select"><a href="blog.html">Blog</a></li>
+                    <li class="select"><a href="blog.html" aria-current="page">Blog</a></li>
+                    <li>
+                        <div class="temas temas-menu">
+                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
+                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" 
+                                title="Cambiar a combinación de colores de alto contraste"
+                                alt="Cambiar a combinación de colores de alto contraste"></a>
+                        </div>
+                    </li>
                     <li class="boton-colabora-menu">
-                        <a href="../index.html#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
+                        <a href="../seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
                 </ul>
+                <img class="icono-menu" id="abrir-menu" src="../img/icon/menu-hamburguesa.svg" 
+                    title="desplegar menú"
+                    alt="desplegar menú">
             </div>
-            <button class="nav-colabora">
-                <a href="../index.html#seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
-            </button>
         </nav>
     </header>
-    <div class="breadcrumb">
+    <div class="breadcrumb" role="navigation" aria-label="Ubicación">
         <ul class="breadcrumb">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a class="active" href="#">Beneficios de adoptar...</a></li>
+          <li><a class="active" href="#" aria-current="page">Beneficios de adoptar...</a></li>
         </ul>
       </div>
     <main id="articulo" class="articulo articulo-3">
@@ -71,21 +78,25 @@
                         <div>
                             <p>Ronroneo</p>
                             <audio src="../sound/purring-cat-156459.mp3" controls loop preload="none"></audio>
-                            <p><small>
+                            <p class="ronroneo"><small>
                                 Sound Effect by <a href="https://pixabay.com/es/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Creating Background Music and Effects</a> 
                                 from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Pixabay</a>
                             </small>
                             </p>
+                            <span class="tooltip tooltip-sonidos1">Sound Effect by <a href="https://pixabay.com/es/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Creating Background Music and Effects</a> 
+                                from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Pixabay</a></span>
                         </div>
                         <div>
                             <p>Maullido</p>
                             <audio src="../sound/cat-call-meow-102607.mp3" controls preload="none"></audio>
-                            <p>
+                            <p class="maullido">
                                 <small>
                                     Sound Effect by <a href="https://pixabay.com/es/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Creating Background Music and Effects</a> 
                                     from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Pixabay</a>
                                 </small>
                             </p>
+                            <span class="tooltip tooltip-sonidos2">Sound Effect by <a href="https://pixabay.com/es/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Creating Background Music and Effects</a> 
+                                from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=156459">Pixabay</a></span>
                         </div>
                     </div>
                     <strong>Reduce el estrés y la ansiedad:</strong>
@@ -96,7 +107,7 @@
                     <div class="video">
                         <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/Th6MlNIxUO0?si=iTM0nUsKbNxM7Cqd" 
-                        title="YouTube video player" frameborder="0" 
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen></iframe>
                     </div>
@@ -129,10 +140,10 @@
                 <hr>
                 <a href="">Proyecto Gestión Chipi Gato Feliz © 2023 by Cristina Rivera is licensed under CC BY-NC-SA 4.0.</a>
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
                 </a>
             </div>
         </div>     

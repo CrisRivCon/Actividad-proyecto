@@ -92,7 +92,6 @@ seccion1.addEventListener('mouseenter', transicion1);
 
 function transicion1() {
     textoSeccion1.classList.add('texto-seccion-1-transicion');
-    
 }
 
 seccion2.addEventListener('mouseenter', transicion2);
@@ -100,7 +99,6 @@ seccion2.addEventListener('mouseenter', transicion2);
 function transicion2() {
     carrousel.classList.add('carrousel-transicion');
     textoSeccion2.classList.add('texto-secc-2-transicion');
-    
 }
 
 seccion3.addEventListener('mouseenter', transicion3);
@@ -108,6 +106,4 @@ seccion3.addEventListener('mouseenter', transicion3);
 function transicion3() {
     tabSeccion3.classList.add('tabs-transicion');
     selectoresSeccion3.classList.add('selectores-transicion');
-    
 }
-
