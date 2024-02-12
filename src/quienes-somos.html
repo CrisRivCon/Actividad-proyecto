@@ -27,28 +27,34 @@
        <div class="enlaces">
                 <ul class="enlaces" id="menu">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li class="select"><a href="#">Quienes somos</a></li>
+                    <li class="select"><a href="#" aria-current="page">Quienes somos</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li>
                         <div class="temas temas-menu">
-                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
-                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste"><img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" alt=""></a>
+                            <a id="tema-clasico" title="Cambiar a combinación de colores clásico">
+                              <img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-verde-mitad-blanco.png" alt=""></a>
+                            <a id="tema-accesible" title="Cambiar a combinación de colores de alto contraste">
+                              <img src="../img/icon/interfaz-de-contraste-simbolo-circular-mitad-negro-mitad-blanco.png" 
+                                title="Cambiar a combinación de colores de alto contraste"
+                                alt="Cambiar a combinación de colores de alto contraste"></a>
                         </div>
                     </li>
                     <li class="boton-colabora-menu">
                         <a href="../seccion-3-colabora"><span class="boton-secundario boton-nav">COLABORA</span></a>
                     </li>
                 </ul>
-                <img class="icono-menu" id="abrir-menu" src="./../img/icon/menu-hamburguesa.svg">
+                <img class="icono-menu" id="abrir-menu" src="./../img/icon/menu-hamburguesa.svg" 
+                    title="desplegar menú"
+                    alt="desplegar menú">
             </div>
       </nav>
     </header>
     <main>
-      <div id="seccion-1" class="seccion-1 quienes-somos contenedor-fondo">
+      <section id="seccion-1" class="seccion-1 quienes-somos contenedor-fondo">
         <div class="contenido">
           <div class="texto-quienes-somos">
-            <h1>Asociación Chipi Gato Feliz</h1>
+            <h1>Conoce nuestra historia</h1>
             <p>
               Nuestra labor comenzó en 2014 cuando construimos el primer refugio
               donde llegamos a tener 70 gatos rescatados en Chipiona. Desde
@@ -85,7 +91,43 @@
             <span class="tooltip">Nébula, adoptada en septiembre de 2023</span>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="tabla" class="seccion-1 quienes-somos tabla">
+        <h2>Al pie del rescate</h2>
+        <p>En la actualidad rescatamos y damos en adopcion cerca de 70 gatos al año a parte de los que cuidamos a diario en el refugio. </p>
+        <table>
+          <caption>Número de adopciones en los últimos años</caption>
+          <thead>
+            <tr>
+              <th scope="col">Año</th>
+              <th scope="col">Número de adopciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2019</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>58</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>63</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>69</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="logo-vertical"></div>
+      </section>
     </main>
     <footer class="footer fondo-footer">
       <div class="texto-footer">
@@ -140,10 +182,10 @@
           <hr>
           <a href="">Proyecto Gestión Chipi Gato Feliz © 2023 by Cristina Rivera is licensed under CC BY-NC-SA 4.0.</a>
           <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+              <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
           </a>
       </div>
       </div>

@@ -5,10 +5,12 @@
   font-family: 'Oswald', sans-serif;
   font-weight: lighter;
   letter-spacing: 0.05em;
+  line-height: 1.5em;
 }
 
 body {
   min-height: 100vh;
+  font-size: 1.3em;
 }
 
 .boton-sin-sombra {
@@ -28,11 +30,16 @@ h2,
 h3,
 h4 {
   font-family: 'Bebas Neue', sans-serif;
+
 }
 
+h1{
+  font-size: 2.5em;
+
+}
 h2,
 h3 {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .enlace-3 {
@@ -42,6 +49,8 @@ h3 {
 a {
   text-decoration: none;
 }
+
+
 
 .email {
   background-image: url('../img/icon/sobre.png');
@@ -76,6 +85,7 @@ a {
 .ubicacion-blanco {
   background-image: url('../img/icon/ubicacion.png');
   background-size: cover;
+  align-self: center;
 }
 
 .boton-primario,
@@ -83,12 +93,12 @@ a {
 .boton-terciario {
   border-radius: 20px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.5em;
   display: inline-block;
   height: 50px;
   text-align: center;
   cursor: pointer;
   width: 150px;
+  font-size: 1.2em;
   box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -97,8 +107,7 @@ a {
 span.boton-primario,
 span.boton-secundario,
 span.boton-terciario {
-  padding-top: 12px;
-
+  padding-top: 9px;
 }
 
 .boton-primario {
@@ -223,7 +232,7 @@ nav a {
 
 /*_______________________*/
 
-@media (width <=742px) {
+@media (width <=849px) {
   nav ul {
     position: absolute;
     flex-direction: column;
@@ -248,8 +257,6 @@ nav a {
 
   nav .enlaces a {
     color: #F7F7F7;
-    font-size: large;
-
   }
 
   nav .enlaces a:hover {
@@ -266,20 +273,20 @@ nav a {
 
 }
 
-@media (742px <=width <=820px) {
+@media (849px <=width <=960px) {
   nav .enlaces {
     gap: 1em;
   }
 }
 
-@media (820px <=width <=1000px) {
+@media (960px <=width <=1099px) {
 
   nav .enlaces {
     gap: 2em;
   }
 }
 
-@media (width > 1000px) {
+@media (width > 1099px) {
   nav .enlaces {
     gap: 3em;
   }
@@ -380,7 +387,6 @@ ul.breadcrumb li a:hover {
 
 .seccion-1 h1 {
   color: #F7F7F7;
-  font-size: 3em;
 }
 
 .texto-seccion-1 p {
@@ -469,6 +475,10 @@ div.botones {
   /* _______ Transición 2 _______*/
   transition: all 0.9s 0.1s ease-in-out;
   /* _______ Transición 2 _______*/
+  justify-self: center;
+  max-width: 40vw;
+  max-width: 458px;
+  width: 100vw;
 }
 
 .texto-secc-2-transicion {
@@ -678,6 +688,8 @@ div.botones {
 
   .texto-secc-2 {
     margin: 0;
+    max-width: none;
+    width: auto;
   }
 
   .texto-secc-2-transicion {
@@ -776,7 +788,6 @@ div.botones {
   padding-bottom: 10px;
   font-family: 'Bebas Neue', sans-serif;
   color: #93C01F;
-  font-size: 22px;
   font-weight: bold;
   cursor: pointer;
   border: 1px solid #93C01F;
@@ -821,7 +832,6 @@ div.botones {
 }
 
 .tab .descripcion {
-  text-align: justify;
   max-width: 400px;
 }
 
@@ -888,7 +898,10 @@ div.botones {
   width: 100%;
   /*min-width: 1100px;*/
 }
-
+/*______Accesibilidad______*/
+.accesible .footer {
+  background-color: #46494f;
+}
 .texto-footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -933,7 +946,7 @@ footer .ubicacion div,
   align-self: end;
   grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 24px;
+  font-size: 1.3em;
   justify-self: left;
 }
 
@@ -958,8 +971,8 @@ footer .ubicacion div,
 }
 
 .footer-footer a {
-  font-size: 0.8em;
   justify-self: center;
+  font-size: .8em;
 }
 
 footer .ubicacion iframe {
@@ -1106,6 +1119,66 @@ footer .ubicacion iframe {
   background-image: url('../img/svg/fondo-quienes-somos-negro.svg');
 }
 
+.accesible .tabla {
+  background-color: #121212;
+}
+
+.accesible .tabla p {
+  color: #F7F7F7;
+}
+
+/* ____Añadida tabla_____*/
+.tabla {
+  height: auto;
+  background-color: #B4D363;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  color: #121212;
+}
+.tabla h2 {
+  padding: 1em;
+  background-color: #F7F7F7;
+  width: 100%;
+  text-align: center;
+
+}
+.tabla p {
+  width: 70%;
+  max-width: 500px;
+  padding: .5em;
+}
+.tabla table {
+  color: #121212;
+  background-color: #F7F7F7;
+  width: 80%;
+  vertical-align: middle;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tabla tr {
+  height: 4em;
+}
+
+.tabla th {
+  width: 50%;
+  font-weight: 500;
+}
+.tabla caption {
+  padding-top: 1em;
+  background-color: #121212;
+  color: #F7F7F7;
+  height: 4em;
+}
+.tabla td, .tabla th, .tabla caption {
+  border: 0.3em solid #a1c644;
+}
+
+
+
 @media (width <=900px) {
 
   .quienes-somos,
@@ -1143,6 +1216,10 @@ footer .ubicacion iframe {
   .accesible .contenedor-fondo {
     background-image: url('../img/svg/fondo-quienes-somos-negro-900.svg');
   }
+
+ .tabla{
+   max-height: 1220px;
+  }
 }
 
 
@@ -1151,6 +1228,7 @@ footer .ubicacion iframe {
 .contacto.contenedor-fondo {
   background-image: url('../img/svg/fondo-contacto-verde.svg');
   position: inherit;
+  height: 120vh;
 }
 
 .contactanos {
@@ -1159,7 +1237,7 @@ footer .ubicacion iframe {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   padding-top: 5em;
 }
 
@@ -1180,7 +1258,7 @@ footer .ubicacion iframe {
 .contacto .ubicacion>a {
   display: flex;
   justify-content: space-around;
-  width: 125px;
+  width: 155px;
   align-self: center;
 }
 
@@ -1341,23 +1419,29 @@ textarea {
 
 /*______________________________ Blog _____________________________*/
 
-.blog {
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(3, minmax(250px, 23%)) minmax(300px, 31%);
-  grid-template-rows: 15% 10% 330px 35%;
-  width: 70%;
-  max-width: 1100px;
-}
+ .blog {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  gap: 2em;
+  padding: 6em 4em;
+  max-width: 1246px;
+  height: fit-content;
+  justify-content: center;
+ } 
 
 #blog {
-  min-height: 928px;
+  min-height: 1025px;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+
 }
 
 .titulo-blog {
   text-align: center;
-  grid-column: 1/5;
-  grid-row: 2/3;
+  width: 100vw;
+
 }
 
 .blog h1 {
@@ -1370,46 +1454,43 @@ textarea {
   box-shadow: 4px 4px 4px #D7D7D7;
 }
 
-.blog h2 {
-  font-size: 1.5em;
-}
-
 .destacado,
-.articulos>div {
+.articulos {
   display: flex;
-  border-top: 1px solid #555962;
-  border-bottom: 1px solid #555962;
+  gap: 2em;
+
+  box-shadow: 4px 4px 4px 4px #D7D7D7;
   padding-left: 25px;
   padding-right: 25px;
+}
+@media (width <=727px) {
+  .destacado,
+  .articulos {
+    flex-direction: column;
+    padding: 25px;
+  }
+
 }
 
 .destacado {
   width: 749px;
-  height: 330px;
-  grid-column: 1/4;
-  grid-row: 3/4;
+  min-height: 343px;
+  height: fit-content;
 }
 
 .destacado img {
-  width: 224px;
+  width: 170.5px;
   height: 256px;
 }
 
 .articulos {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 1/5;
-  grid-row: 4/5;
-}
-
-.articulos>div {
-  margin-top: 61px;
   width: 492px;
-  height: 243px;
+  min-height: 343px;
+  height: fit-content;
 }
 
 .articulos img {
-  width: 264px;
+  width: 117px;
   height: 176px;
 }
 
@@ -1417,23 +1498,30 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 1.5em;
   background-color: #F7F8F9;
   width: 287px;
-  grid-column: 4/5;
-  grid-row: 3/4;
-  box-shadow: 4px 4px 4px #D7D7D7;
+  box-shadow: 4px 4px 4px 4px #D7D7D7;
   justify-self: end;
+  height: 343px;
 }
 
 .entrada p:first-child a {
   color: #121212;
   font-weight: 500;
+
+}
+.entrada p:last-child{
+  font-size: 0.7em;
 }
 
 .entrada p:first-child {
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 220px;
+
 }
 
 .leer-mas {
@@ -1443,7 +1531,6 @@ textarea {
 .leer-mas>a{
   font-weight: 500;
   color: #93C01F;
-  font-size: 1.5em;
  }
 
 .texto-articulo {
@@ -1451,7 +1538,7 @@ textarea {
   align-self: center;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 50px;
+  gap: 1em;
   height: 80%;
 }
 
