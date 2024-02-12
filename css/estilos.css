@@ -479,7 +479,6 @@ div.botones {
   max-width: 40vw;
   max-width: 458px;
   width: 100vw;
-  border-radius: 30px;
 }
 
 .texto-secc-2-transicion {
@@ -692,6 +691,7 @@ div.botones {
     max-width: none;
     width: auto;
     box-shadow: 3px 3px 3px 3px #555962;
+    border-radius: 30px;
 
   }
 
