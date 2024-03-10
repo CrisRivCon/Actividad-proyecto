@@ -34,7 +34,8 @@ const punto = document.querySelectorAll('.punto');
 
 punto.forEach(( cadaPunto, i ) =>{
     punto[i].addEventListener('click', (e) =>{
-        let operacion = i * -25;
+        let porcenaje = window.innerWidth < 574 ? 35 : 33;
+        let operacion = i * -porcenaje;
         grande.style.transform = `translateX(${operacion}%)`;
         let activo = document.querySelector('.punto-activo');
         activo.classList.remove('punto-activo');

@@ -222,14 +222,18 @@ nav a {
 /*_____Accesibilidad_____*/
 .temas {
   display: flex;
-  gap: 1em;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .temas a {
   cursor: pointer;
-}
+  height: 1.5em;
 
+}
+.temas img {
+  height: 1em;
+}
 /*_______________________*/
 
 @media (width <=849px) {
@@ -269,6 +273,10 @@ nav a {
 
   .select {
     text-decoration: none;
+  }
+  .temas {
+    flex-direction: row;
+    gap: 1em;
   }
 
 }
@@ -370,9 +378,9 @@ ul.breadcrumb li a:hover {
 .texto-seccion-1 {
   top: 40%;
   position: absolute;
-  display: grid;
-  grid-template-rows: 100px 100px 217px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
   transition: all 1s cubic-bezier(.68, -0.55, .27, 1.55);
   padding: 0 4em;
   /* _______ Transición 1 _______*/
@@ -392,6 +400,7 @@ ul.breadcrumb li a:hover {
 .texto-seccion-1 p {
   color: #F7F7F7;
   line-height: 2.5em;
+  width: 450px;
 }
 
 div.botones {
@@ -404,6 +413,21 @@ div.botones {
   .fondo-seccion-1 {
     background-image: url('../img/disparo-horizontal-dos-gatos-sentados-sobre-fondo-borroso-400x800.jpg');
   }
+  .texto-seccion-1 {
+    top: 25%;
+    gap: 4em;
+  }
+  .seccion-1 h1 {
+    width: 310px;
+  }
+  .texto-seccion-1 p {
+    width: 300px;
+  }
+  .texto-seccion-1-transicion {
+    left: 0em;
+    /* _______ Transición 1 _______*/
+  }
+
 }
 
 @media (width <=800px) {
@@ -546,7 +570,6 @@ div.botones {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 2em;
   transition: all .5s ease;
   transform: translateX(0%);
 }
@@ -677,8 +700,8 @@ div.botones {
   .seccion-2 {
     display: flex;
     flex-direction: column;
-    gap: 5em;
-    padding: 10em 2em;
+    gap: 4em;
+    padding: 8em 0em;
     min-height: 1400px;
   }
 
@@ -690,9 +713,13 @@ div.botones {
     margin: 0;
     max-width: none;
     width: auto;
-    box-shadow: 3px 3px 3px 3px #555962;
-    border-radius: 30px;
-
+    border-left: none;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    text-align: justify;
   }
 
   .texto-secc-2-transicion {
@@ -811,8 +838,6 @@ div.botones {
   z-index: 1;
 }
 
-
-
 .tab-texto,
 .tab-imagen {
   display: flex;
@@ -842,6 +867,13 @@ div.botones {
   color: #93C01F;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-decoration: underline;
+}
+.tabs-responsive {
+  display: none;
+}
+.titulo-texto {
+  display: none;
 }
 
 @media (width <=800px) {
@@ -849,28 +881,61 @@ div.botones {
     visibility: hidden;
     display: none;
   }
-
   .seccion-3 {
-    grid-template: 70vh / 1px minmax(140px, 20vw) minmax(300px, 80vw);
     padding-top: 20vh;
-  }
-
-  .tab {
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .seccion-3 .titulo-texto{
+    color: #121212;
+    background-color: #F7F7F7;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #121212;
   }
 
   .tabs {
-    width: 95%;
+    display: none;
   }
-
-  .boton-tab {
-    left: 3em;
+  .tab-texto {
+    gap: 1em;
   }
+  .selectores {
+    display: none;
+  }
+  .tabs-responsive {
+    background-color: #F7F7F7;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .tabs-responsive details[open]{
+    border: 2px solid #B4D363;
+    border-radius: 10px;
+    padding-bottom: .5em;
 
-  .boton-tab.tab-activo {
-    left: 0.5em;
+  }
+  .tabs-responsive summary{
+    border-radius: 10px 0 0;
+    border-bottom: 2px solid #B4D363;
+    line-height: 2em;
+    padding: 0.5em;
+  }
+  .fondo-seccion-3 {
+    background-image: unset;
+    background-color: #a1c644;
+  }
+  .accesible .fondo-seccion-3 {
+    background-image: unset;
+    background-color: #121212;
+  }
+  .titulo-texto {
+    display: block;
   }
 }
 
@@ -878,7 +943,9 @@ div.botones {
 
 .accesible .titulo-tab {
   color: #121212;
-  border-bottom: 2px solid #cb6370;
+}
+.accesible .seccion-3 .titulo-texto{
+  border-bottom: 2px solid #93C01F;
 }
 
 .accesible .card-email {
@@ -890,7 +957,7 @@ div.botones {
   color: #121212;
 }
 
-.accesible .seccion-3 {
+.accesible .fondo-seccion-3 {
   background-image: url('../img/svg/fondo-seccion-3-negro.svg');
 }
 
@@ -907,7 +974,7 @@ div.botones {
 }
 .texto-footer {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 34%;
   grid-template-rows: 85% 15%;
   height: 100%;
   justify-items: center;
@@ -968,7 +1035,7 @@ footer .ubicacion div,
 
 .footer-footer hr {
   color: #F7F7F7;
-  width: 100vw;
+  width: 100%;
   height: 2px;
   justify-self: center;
 }
@@ -1051,7 +1118,6 @@ footer .ubicacion iframe {
   width: 40%;
   gap: 1.5em;
   background-color: #F7F7F7;
-  border-radius: 2em;
   padding: 1em;
 }
 
@@ -1195,8 +1261,7 @@ footer .ubicacion iframe {
 
   .texto-quienes-somos {
     align-items: center;
-    box-shadow: 3px 3px 3px 3px #555962;
-    width: 90%;
+    width: 100%;
 
   }
 
@@ -1226,6 +1291,9 @@ footer .ubicacion iframe {
 
  .tabla{
    max-height: 1220px;
+  }
+  .tabla caption {
+    padding-top: 0.1em;
   }
 }
 
@@ -1302,6 +1370,7 @@ footer .ubicacion iframe {
   width: 100%;
   max-width: 300px;
   padding: .5em;
+  background-color: #F7F7F7;
 }
 
 .linea-input {
@@ -1347,6 +1416,7 @@ textarea {
   color: #555962;
   height: 8em;
   padding: 0.5em;
+  background-color: #F7F7F7;
 
 }
 
@@ -1470,14 +1540,7 @@ textarea {
   padding-left: 25px;
   padding-right: 25px;
 }
-@media (width <=727px) {
-  .destacado,
-  .articulos {
-    flex-direction: column;
-    padding: 25px;
-  }
 
-}
 
 .destacado {
   width: 749px;
@@ -1552,7 +1615,37 @@ textarea {
 .texto-largo {
   color: #323437;
 }
+@media (width <=400px) {
+  .blog img {
+    display: none;
+  }
+  .articulos {
+    width: 100%;
+    box-shadow: inset;
 
+  }
+  .blog {
+    padding: 6em 0;
+  }
+  .novedades {
+    display: none;
+  }
+}
+
+@media (width <=800px) {
+  .destacado,
+  .articulos {
+    flex-direction: column;
+    padding: 25px;
+  }
+ 
+  .titulo-blog h1{
+    width: 100%;
+  }
+  
+  
+
+}
 /*Accesibilidad*/
 .accesible .leer-mas {
   cursor: pointer;
@@ -1597,8 +1690,8 @@ textarea {
   overflow: hidden;
   box-shadow: 2px 2px 3px #121212;
   min-height: 100vh;
-  min-width: 1100px;
   width: 100%;
+  height: fit-content;
 }
 
 .articulo article {
@@ -1672,6 +1765,31 @@ textarea {
   margin: 30px auto 100px auto;
 }
 
+
+@media (width <=900px) {
+  .articulo{
+    width: 100vw;
+    min-width: auto;
+  }
+  .articulo article {
+    padding: 1em;
+    width: 100%;
+  }
+  .cabecera {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-vertical {
+    width: 100%;
+    max-width: 300px;
+    height: 10vh;
+  }
+  .sonidos {
+    flex-direction: column;
+  }
+}
+
+
 /*______________________________ Acordeón _____________________________*/
 
 strong,
@@ -1686,17 +1804,17 @@ summary {
 }
 
 .articulo summary {
-  list-style: none;
+  /* list-style: none; */
   cursor: pointer;
 }
 
-.articulo summary::before {
+/* .articulo summary::before {
   content: url('../img/icon/pata.png');
 }
 
 .articulo details[open] summary::before {
   content: url('../img/icon/pata-girada.png');
-}
+} */
 
 /*https://www.flaticon.es/iconos-gratis/gato*/
 
